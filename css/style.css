@@ -1,8 +1,31 @@
 body {
-    background-color: 1C1C1C;
+    background-color: #1C1C1C;
 }
 
-.container {
-    width: 1200px;
-    margin: 0 auto;
+a {
+    text-decoration: none;
 }
+.container {
+    max-width: 1200px;
+    margin: 0 auto;  /* center elements */
+    padding: 0 10px;  
+}
+
+.header-content {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.menu__list {
+    display: flex;
+    gap: 0 30px;
+    list-style: none;
+}
+
+.menu__link {
+    text-transform: uppercase;
+    color:#FFFFFF;
+}
+
