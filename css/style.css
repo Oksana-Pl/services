@@ -8,7 +8,7 @@
 body {
     background-color: var(--black);
     font-family: "Akrobat", sans-serif;
-    font-size: 32px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 500;
     color: var(--white);
@@ -30,6 +30,7 @@ a {
     padding-bottom: 28px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .menu__list {
@@ -41,7 +42,7 @@ a {
 .menu__link {
     text-transform: uppercase;
     color: var(--white);
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -54,7 +55,6 @@ a {
     gap: 0;
     margin-bottom: 0;
 }
-
 .form-control {
     display: flex;
     padding: 15px 20px;
@@ -62,44 +62,37 @@ a {
     align-items: center;
     gap: 10px;
     border-radius: 10px;
-    font-size: 36px;
+    font-size: 24px;
     background-color: var(--red);
-    font-size: 32px;
     font-style: normal;
     font-weight: 500;
     color: var(--white);
 }
-
 .form-control:focus {
     outline: none;
     border: 1px solid var(--white);
 }
-
 .dropdown {
     position: relative;
-    height: 72px;
+    /* height: 72px; */
 }
-
 .dropbtn {
     cursor: pointer;
     display: flex;
 }
 
 .dropbtn::after {
-
-    font-size: 36px;
+    font-size: 24px;
 }
-
 .dropbtn:focus {
     outline: none;
     border: 2px solid var(--white);
 }
-
-
 .dropdown-content {
-    top: 72px;
+    top: 100%;
     display: none;
     position: absolute;
+    left: 0;
     background-color: var(--red);
     width: 100%;
     font-family: "Akrobat", sans-serif;
@@ -116,18 +109,15 @@ a {
     border-top: 1px solid var(--white);
     max-width: none;
     font-family: "Akrobat", sans-serif;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 500;
 }
-
 .dropdown-content a:hover {
     background-color: var(--red-dark);
 }
-
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 .dropdown:hover .dropbtn {
     background-color: var(--red);
     border-radius: 10px 10px 0 0;
