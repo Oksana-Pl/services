@@ -1,10 +1,17 @@
+:root {
+    --red: #DC0033;
+    --white: #FFFFFF;
+    --black: #1C1C1C;
+    --red-dark: #A40227;
+}
+
 body {
-    background-color: #1C1C1C;
-    font-family: Akrobat;
+    background-color: var(--black);
+    font-family: "Akrobat", sans-serif;
     font-size: 32px;
     font-style: normal;
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 a {
@@ -33,14 +40,12 @@ a {
 
 .menu__link {
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 36px;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 /* dropdown-languages */
-/* dropdown-languages */
-
 .form-group {
     display: flex;
     width: auto;
@@ -52,28 +57,22 @@ a {
 
 .form-control {
     display: flex;
+    padding: 15px 20px;
     justify-content: center;
     align-items: center;
     gap: 10px;
-
-    padding: 15px 20px;
-    min-width: 91px;
-    height: 72px;
-
-    border: none;
     border-radius: 10px;
-
-    font-size: 48px;
-    font-family: "Akrobat", sans-serif;
-    font-weight: 700;
-    line-height: 1;
-    color: #FFFFFF;
-    background-color: #DC0033;
+    font-size: 36px;
+    background-color: var(--red);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--white);
 }
 
 .form-control:focus {
     outline: none;
-    border: 4px solid #FFFFFF;
+    border: 1px solid var(--white);
 }
 
 .dropdown {
@@ -83,25 +82,25 @@ a {
 
 .dropbtn {
     cursor: pointer;
-    text-align: center;
+    display: flex;
 }
 
 .dropbtn::after {
-    content: "⌄";
+
     font-size: 36px;
-    line-height: 1;
 }
 
 .dropbtn:focus {
     outline: none;
-    border: 4px solid #FFFFFF;
+    border: 2px solid var(--white);
 }
+
 
 .dropdown-content {
     top: 72px;
     display: none;
     position: absolute;
-    background-color: #DC0033;
+    background-color: var(--red);
     width: 100%;
     font-family: "Akrobat", sans-serif;
     border-radius: 0 0 10px 10px;
@@ -110,20 +109,19 @@ a {
 }
 
 .dropdown-content a {
-    color: #FFFFFF;
+    color: var(--white);
     padding: 15px 20px;
     text-decoration: none;
     display: block;
-    border-top: 4px solid #FFFFFF;
+    border-top: 1px solid var(--white);
     max-width: none;
     font-family: "Akrobat", sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .dropdown-content a:hover {
-    background-color: #B8002A;
+    background-color: var(--red-dark);
 }
 
 .dropdown:hover .dropdown-content {
@@ -131,6 +129,6 @@ a {
 }
 
 .dropdown:hover .dropbtn {
-    background-color: #B8002A;
+    background-color: var(--red);
     border-radius: 10px 10px 0 0;
 }
