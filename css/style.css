@@ -1,21 +1,28 @@
 body {
     background-color: #1C1C1C;
+    font-family: Akrobat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    color: #FFFFFF;
 }
 
 a {
     text-decoration: none;
 }
+
 .container {
     max-width: 1200px;
-    margin: 0 auto;  /* center elements */
-    padding: 0 10px;  
+    margin: 0 auto;
+    /* center elements */
+    padding: 0 10px;
 }
 
 .header-content {
     padding-top: 28px;
     padding-bottom: 28px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
 .menu__list {
@@ -26,6 +33,104 @@ a {
 
 .menu__link {
     text-transform: uppercase;
-    color:#FFFFFF;
+    color: #FFFFFF;
+    font-size: 36px;
+    font-weight: 700;
 }
 
+/* dropdown-languages */
+/* dropdown-languages */
+
+.form-group {
+    display: flex;
+    width: auto;
+    max-width: none;
+    flex-direction: column;
+    gap: 0;
+    margin-bottom: 0;
+}
+
+.form-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 15px 20px;
+    min-width: 91px;
+    height: 72px;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 48px;
+    font-family: "Akrobat", sans-serif;
+    font-weight: 700;
+    line-height: 1;
+    color: #FFFFFF;
+    background-color: #DC0033;
+}
+
+.form-control:focus {
+    outline: none;
+    border: 4px solid #FFFFFF;
+}
+
+.dropdown {
+    position: relative;
+    height: 72px;
+}
+
+.dropbtn {
+    cursor: pointer;
+    text-align: center;
+}
+
+.dropbtn::after {
+    content: "⌄";
+    font-size: 36px;
+    line-height: 1;
+}
+
+.dropbtn:focus {
+    outline: none;
+    border: 4px solid #FFFFFF;
+}
+
+.dropdown-content {
+    top: 72px;
+    display: none;
+    position: absolute;
+    background-color: #DC0033;
+    width: 100%;
+    font-family: "Akrobat", sans-serif;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    border-top: 4px solid #FFFFFF;
+    max-width: none;
+    font-family: "Akrobat", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.dropdown-content a:hover {
+    background-color: #B8002A;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #B8002A;
+    border-radius: 10px 10px 0 0;
+}
