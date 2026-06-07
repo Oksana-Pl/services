@@ -48,28 +48,35 @@
 body {
     background-color: var(--black);
     font-family: "Akrobat", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     color: var(--white);
+    line-height: 1.3;
 }
 a {
     text-decoration: none;
 }
 
-/* header */
+/* header together with hero*/
+/* header-top */
 .container {
     max-width: 1200px;
     margin: 0 auto;    /* center elements */
     padding: 0 10px;
 }
 
-.header-content {
+.container-header {
+    border-bottom: 1px solid var(--white);
+}
+
+.header-top {
     padding-top: 20px;
     padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+   
 }
 
 .menu__list {
@@ -85,8 +92,9 @@ a {
     font-weight: 500;
 }
 
-header {
-    border-bottom: 1px solid var(--white);
+.logo__img {
+    max-height: 50px;
+    width: auto;
 }
 
 /* dropdown-languages */
@@ -143,7 +151,6 @@ header {
     overflow: hidden;
     z-index: 1000;
 }
-
 .dropdown-content a {
     color: var(--white);
     padding: 15px 20px;
@@ -168,3 +175,49 @@ header {
 
 /* hero */
 
+.header__inner {
+    min-height: 100vh;
+}
+
+.hero__inner__img {
+    max-height: 70vh;
+    width: auto;
+}
+
+.hero__inner {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;      /* левая и правая сторона центрируются по вообразимой центральной линии относительно друг друга */
+    justify-content: space-between;  /* чтоб растянулись две половины по ширине контейнера */
+}
+
+.hero__inner__box {
+    max-width: 700px;
+}
+
+.hero-title-box {
+    max-width: 540px;
+}
+.hero-title {
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+}
+.hero-title-decor {
+    font-family: var(--font-decorative);
+    font-size: 80px;
+    font-style: italic;
+    font-weight: 800;
+    /* margin: 40px 0; */
+}
+
+.hero-btn {
+    background-color: var(--red);
+    padding: 15px 30px;
+    display: inline-block;    /* перестает вести себя как линейный элемнт и становится как блочный - не заходит на текст */
+    border-radius: 60px;
+    margin-top: 30px;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 24px;
+}
