@@ -36,6 +36,7 @@
     font-style: normal;
 }
 
+/* general */
 :root {
     --red: #DC0033;
     --white: #FFFFFF;
@@ -44,7 +45,6 @@
     --font-main: "Akrobat", sans-serif;
     --font-decorative: "Playfair Display", serif;
 }
-
 body {
     background-color: var(--black);
     font-family: "Akrobat", sans-serif;
@@ -53,21 +53,20 @@ body {
     font-weight: 500;
     color: var(--white);
 }
-
 a {
     text-decoration: none;
 }
 
+/* header */
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    /* center elements */
+    margin: 0 auto;    /* center elements */
     padding: 0 10px;
 }
 
 .header-content {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +83,10 @@ a {
     color: var(--white);
     font-size: 24px;
     font-weight: 500;
+}
+
+header {
+    border-bottom: 1px solid var(--white);
 }
 
 /* dropdown-languages */
@@ -162,3 +165,6 @@ a {
     background-color: var(--red);
     border-radius: 10px 10px 0 0;
 }
+
+/* hero */
+
