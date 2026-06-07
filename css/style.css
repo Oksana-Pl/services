@@ -1,8 +1,48 @@
+/* fonts */
+@font-face {
+    font-family: "Akrobat";
+    src: url("../fonts/Akrobat-ExtraLight.otf") format("opentype");
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("../fonts/Akrobat-Light.otf") format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("../fonts/Akrobat-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("../fonts/Akrobat-SemiBold.otf") format("opentype");
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("../fonts/Akrobat-Bold.otf") format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Akrobat";
+    src: url("../fonts/Akrobat-Black.otf") format("opentype");
+    font-weight: 900;
+    font-style: normal;
+}
+
 :root {
     --red: #DC0033;
     --white: #FFFFFF;
     --black: #1C1C1C;
     --red-dark: #A40227;
+    --font-main: "Akrobat", sans-serif;
+    --font-decorative: "Playfair Display", serif;
 }
 
 body {
