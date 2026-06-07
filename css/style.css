@@ -64,6 +64,11 @@ a {
     font-weight: 700;
     font-size: 38px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+section {
+    margin-bottom: 100px;
 }
 
 /* header together with hero*/
@@ -225,17 +230,18 @@ a {
     display: inline-block;    /* перестает вести себя как линейный элемнт и становится как блочный - не заходит на текст */
     border-radius: 60px;
     margin-top: 30px;
+    margin-bottom: 50px;
     color: var(--white);
     font-weight: 700;
     font-size: 24px;
 }
 
 /* main content */
-
 .what-i-do {
-    margin: 50px 0;
+    /* margin: 50px 0; */
     border-top: 1px solid var(--white);
-    border-bottom: 1 px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 50px 0;
 }
 
 .what-i-do-content {
@@ -244,3 +250,36 @@ a {
     gap: 50px;
 }
 
+.inner-list{
+    display: flex;
+    text-align: left;
+    /* gap: 0 30px; */
+}
+
+dt {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+dd {
+    margin: 0;
+}
+
+.inner-list div {
+    padding: 0 30px;
+    border-right: 1px solid var(--white);
+}
+.inner-list > div:first-child {
+    border-left: 1px solid var(--white);
+}
+
+.portfolio-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.portfolio-text {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
