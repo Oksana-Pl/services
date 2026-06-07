@@ -65,6 +65,7 @@ a {
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
+    
 }
 
 section {
@@ -265,7 +266,7 @@ dd {
     margin: 0;
 }
 
-.inner-list div {
+.what-i-do .inner-list div {
     padding: 0 30px;
     border-right: 1px solid var(--white);
 }
@@ -284,7 +285,35 @@ dd {
     text-transform: uppercase;
 }
 
-.clients-list img{
-    
+.clients-list .clients-img{
+    margin-bottom: 50px;
+}
 
+.my-clients .three-arias{
+    margin-top: 60px;
+}
+
+.clients-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    /* єто віровняло иконки по их размеру. они были растянуты по ширине контейнера после применения flex */
+    border: 1px solid var(--white);
+    padding: 50px;
+}
+
+.my-clients .clients-list:not(:last-child) {
+    border-right: none;
+}
+
+.clients-link {
+    font-size: 30px;
+    color: var(--red);
+    font-weight: 400;
+}
+.clients-link {
+    margin-top: auto;
+}
+
+.clients-list dd {
+    margin-bottom: 30px;
 }
