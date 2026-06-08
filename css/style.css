@@ -487,13 +487,12 @@ dd {
 .dropdown{
     background-color: transparent;
     border:none;
-    color: var(--white);
     font-family: var(--font-main);
-    font-weight: 650;
-    font-size: 30px;
+    font-weight: 700;
+    font-size: 38px;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 1px;
-    margin: 25px 0;
+    margin: 25px o;
+    color: var(--white);
 
 }
