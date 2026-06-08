@@ -325,3 +325,18 @@ dd {
 .references div dd {
     margin-bottom: 30px;
 }
+
+.services-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
+    /* grid-template-rows: repeat(2, 1fr); */
+}
+
+.services-header {
+    grid-column: span 2;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+}
