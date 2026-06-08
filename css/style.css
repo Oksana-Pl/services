@@ -445,6 +445,7 @@ dd {
     display: flex;
     flex-direction: column;
     gap: 50px;
+  
 }
 
 .other--list {
@@ -481,4 +482,18 @@ dd {
     text-align: center;
     box-sizing: border-box;
     letter-spacing: 1px;
+}
+
+.dropdown{
+    background-color: transparent;
+    border:none;
+    color: var(--white);
+    font-family: var(--font-main);
+    font-weight: 650;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 25px 0;
+
 }
