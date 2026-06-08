@@ -369,7 +369,7 @@ dd {
 .card-text{
 margin-bottom: 50px;
 }
-.services-header-2, .services-header-3{
+.services-header-2, .services-header-3, .services-header-others{
     background-color: var(--red);
     border: 1px solid var(--white);
     text-align: center;
@@ -396,4 +396,14 @@ margin-bottom: 50px;
 }
 .services-header-3 {
     grid-column: span 3;
+}
+
+.services-other{
+    margin-top: 60px;
+}
+.other--list{
+
+}
+.other--list--item{
+    
 }
