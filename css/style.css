@@ -238,14 +238,14 @@ section {
 }
 
 /* main content */
-.what-i-do {
+.what-i-do, .references {
     /* margin: 50px 0; */
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
     padding: 50px 0;
 }
 
-.what-i-do-content {
+.what-i-do-content, .references-content {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -267,6 +267,10 @@ dd {
 }
 
 .what-i-do .inner-list div {
+    padding: 0 30px;
+    border-right: 1px solid var(--white);
+}
+.references .inner-list div{
     padding: 0 30px;
     border-right: 1px solid var(--white);
 }
@@ -306,7 +310,7 @@ dd {
 }
 
 .clients-link {
-    font-size: 30px;
+    font-size: 24px;
     color: var(--red);
     font-weight: 400;
 }
@@ -315,5 +319,9 @@ dd {
 }
 
 .clients-list dd {
+    margin-bottom: 30px;
+}
+
+.references div dd {
     margin-bottom: 30px;
 }
