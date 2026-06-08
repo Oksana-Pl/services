@@ -235,6 +235,7 @@ section {
     color: var(--white);
     font-weight: 700;
     font-size: 24px;
+    letter-spacing: 1px;
 }
 
 /* main content */
@@ -297,7 +298,7 @@ dd {
     margin-top: 60px;
 }
 
-.clients-list {
+.clients-list{
     display: flex;
     flex-direction: column;
     align-items: flex-start;    /* єто віровняло иконки по их размеру. они были растянуты по ширине контейнера после применения flex */
@@ -326,10 +327,14 @@ dd {
     margin-bottom: 30px;
 }
 
+
+/* cervices */
 .services-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
     /* grid-template-rows: repeat(2, 1fr); */
+    align-items: stretch;
+    min-height: 80vh;
 }
 
 .services-header {
@@ -339,4 +344,35 @@ dd {
 .service-card {
     display: flex;
     flex-direction: column;
+}
+
+.card-btn {
+    background-color: var(--red);
+    padding: 10px 20px;
+    border-radius: 60px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: auto;
+    display: block;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+.card-text{
+margin-bottom: 50px;
+}
+
+.services-header{
+    background-color: var(--red);
+    border: 1px solid var(--white);
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--white);
+    padding: 30px;
 }
