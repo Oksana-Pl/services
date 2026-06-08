@@ -336,16 +336,14 @@ dd {
     align-items: stretch;
     min-height: 80vh;
 }
-
 .services-header {
     grid-column: span 2;
 }
-
 .service-card {
     display: flex;
     flex-direction: column;
+    margin-bottom: 30px;
 }
-
 .card-btn {
     background-color: var(--red);
     padding: 10px 20px;
@@ -360,19 +358,22 @@ dd {
     box-sizing: border-box;
     letter-spacing: 1px;
 }
-
 .card-text{
 margin-bottom: 50px;
 }
-
 .services-header{
     background-color: var(--red);
     border: 1px solid var(--white);
+    text-align: center;
+    letter-spacing: 1px;
 }
-
 .service-card {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--white);
     padding: 30px;
+}
+.card-title{
+    text-transform: uppercase;
+    font-size: 26px;
 }
