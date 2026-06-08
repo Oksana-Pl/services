@@ -5,30 +5,35 @@
     font-weight: 200;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Akrobat";
     src: url("../fonts/Akrobat-Light.otf") format("opentype");
     font-weight: 300;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Akrobat";
     src: url("../fonts/Akrobat-Regular.otf") format("opentype");
     font-weight: 400;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Akrobat";
     src: url("../fonts/Akrobat-SemiBold.otf") format("opentype");
     font-weight: 600;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Akrobat";
     src: url("../fonts/Akrobat-Bold.otf") format("opentype");
     font-weight: 700;
     font-style: normal;
 }
+
 @font-face {
     font-family: "Akrobat";
     src: url("../fonts/Akrobat-Black.otf") format("opentype");
@@ -45,6 +50,7 @@
     --font-main: "Akrobat", sans-serif;
     --font-decorative: "Playfair Display", serif;
 }
+
 body {
     background-color: var(--black);
     font-family: "Akrobat", sans-serif;
@@ -65,7 +71,7 @@ a {
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
-    
+
 }
 
 section {
@@ -83,7 +89,8 @@ sup {
 /* header-top */
 .container {
     max-width: 1200px;
-    margin: 0 auto;    /* center elements */
+    margin: 0 auto;
+    /* center elements */
     padding: 0 10px;
 }
 
@@ -97,7 +104,7 @@ sup {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+
 }
 
 .menu__list {
@@ -127,6 +134,7 @@ sup {
     gap: 0;
     margin-bottom: 0;
 }
+
 .form-control {
     display: flex;
     padding: 15px 20px;
@@ -140,14 +148,17 @@ sup {
     font-weight: 500;
     color: var(--white);
 }
+
 .form-control:focus {
     outline: none;
     border: 1px solid var(--white);
 }
+
 .dropdown {
     position: relative;
     /* height: 72px; */
 }
+
 .dropbtn {
     cursor: pointer;
     display: flex;
@@ -156,10 +167,12 @@ sup {
 .dropbtn::after {
     font-size: 24px;
 }
+
 .dropbtn:focus {
     outline: none;
     border: 2px solid var(--white);
 }
+
 .dropdown-content {
     top: 100%;
     display: none;
@@ -172,6 +185,7 @@ sup {
     overflow: hidden;
     z-index: 1000;
 }
+
 .dropdown-content a {
     color: var(--white);
     padding: 15px 20px;
@@ -183,12 +197,15 @@ sup {
     font-size: 24px;
     font-weight: 500;
 }
+
 .dropdown-content a:hover {
     background-color: var(--red-dark);
 }
+
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 .dropdown:hover .dropbtn {
     background-color: var(--red);
     border-radius: 10px 10px 0 0;
@@ -208,8 +225,10 @@ sup {
 .hero__inner {
     display: flex;
     gap: 0 20px;
-    align-items: center;      /* левая и правая сторона центрируются по вообразимой центральной линии относительно друг друга */
-    justify-content: space-between;  /* чтоб растянулись две половины по ширине контейнера */
+    align-items: center;
+    /* левая и правая сторона центрируются по вообразимой центральной линии относительно друг друга */
+    justify-content: space-between;
+    /* чтоб растянулись две половины по ширине контейнера */
 }
 
 .hero__inner__box {
@@ -219,11 +238,13 @@ sup {
 .hero-title-box {
     max-width: 540px;
 }
+
 .hero-title {
     font-size: 80px;
     font-style: normal;
     font-weight: 800;
 }
+
 .hero-title-decor {
     font-family: var(--font-decorative);
     font-size: 80px;
@@ -235,7 +256,8 @@ sup {
 .hero-btn {
     background-color: var(--red);
     padding: 15px 30px;
-    display: inline-block;    /* перестает вести себя как линейный элемнт и становится как блочный - не заходит на текст */
+    display: inline-block;
+    /* перестает вести себя как линейный элемнт и становится как блочный - не заходит на текст */
     border-radius: 60px;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -246,20 +268,22 @@ sup {
 }
 
 /* main content */
-.what-i-do, .references {
+.what-i-do,
+.references {
     /* margin: 50px 0; */
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
     padding: 50px 0;
 }
 
-.what-i-do-content, .references-content {
+.what-i-do-content,
+.references-content {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
 
-.inner-list{
+.inner-list {
     display: flex;
     text-align: left;
     /* gap: 0 30px; */
@@ -270,6 +294,7 @@ dt {
     font-weight: 600;
     margin-bottom: 30px;
 }
+
 dd {
     margin: 0;
 }
@@ -278,11 +303,13 @@ dd {
     padding: 0 30px;
     border-right: 1px solid var(--white);
 }
-.references .inner-list div{
+
+.references .inner-list div {
     padding: 0 30px;
     border-right: 1px solid var(--white);
 }
-.inner-list > div:first-child {
+
+.inner-list>div:first-child {
     border-left: 1px solid var(--white);
 }
 
@@ -291,24 +318,26 @@ dd {
     align-items: center;
     gap: 20px;
 }
+
 .portfolio-text {
     font-size: 30px;
     font-weight: 600;
     text-transform: uppercase;
 }
 
-.clients-list .clients-img{
+.clients-list .clients-img {
     margin-bottom: 50px;
 }
 
-.my-clients .three-arias{
+.my-clients .three-arias {
     margin-top: 60px;
 }
 
-.clients-list{
+.clients-list {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;    /* єто віровняло иконки по их размеру. они были растянуты по ширине контейнера после применения flex */
+    align-items: flex-start;
+    /* єто віровняло иконки по их размеру. они были растянуты по ширине контейнера после применения flex */
     border: 1px solid var(--white);
     padding: 50px;
 }
@@ -322,6 +351,7 @@ dd {
     color: var(--red);
     font-weight: 400;
 }
+
 .clients-link {
     margin-top: auto;
 }
@@ -336,22 +366,26 @@ dd {
 
 
 /* cervices */
-.services-grid-2{
+.services-grid-2 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
+    grid-template-columns: repeat(2, 1fr);
+    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
     /* grid-template-rows: repeat(2, 1fr); */
     align-items: stretch;
     min-height: 80vh;
     margin-top: 60px;
 }
+
 .services-header-2 {
     grid-column: span 2;
 }
+
 .service-card {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
+
 .card-btn {
     background-color: var(--red);
     padding: 10px 20px;
@@ -366,44 +400,85 @@ dd {
     box-sizing: border-box;
     letter-spacing: 1px;
 }
-.card-text{
-margin-bottom: 50px;
+
+.card-text {
+    margin-bottom: 50px;
 }
-.services-header-2, .services-header-3, .services-header-others{
+
+.services-header-2,
+.services-header-3,
+.services-header-others {
     background-color: var(--red);
     border: 1px solid var(--white);
     text-align: center;
     letter-spacing: 1px;
 }
+
 .service-card {
     display: flex;
     flex-direction: column;
     border: 1px solid var(--white);
     padding: 30px;
 }
-.card-title{
+
+.card-title {
     text-transform: uppercase;
     font-size: 26px;
 }
 
-.services-grid-3{
+.services-grid-3 {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
+    grid-template-columns: repeat(3, 1fr);
+    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
     /* grid-template-rows: repeat(2, 1fr); */
     align-items: stretch;
     min-height: 80vh;
     margin-top: 60px;
 }
+
 .services-header-3 {
     grid-column: span 3;
 }
 
-.services-other{
+.services-other {
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
-.other--list{
 
+.other--list {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap; /* elements will go from next row*/
+    /* max-width: 1200px; */
+    margin: 0;
+    padding: 0;
+    align-self: stretch;
 }
-.other--list--item{
-    
+
+.other--list--item {
+    padding: 20px;
+    list-style: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 28px;
+    border: 1px solid var(--white);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.other-btn{
+    background-color: var(--red);
+    padding: 10px 30px;
+    border-radius: 60px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 22px;
+    margin-top: auto;
+    display: block;
+    align-self: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    letter-spacing: 1px;
 }
