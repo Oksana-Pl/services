@@ -72,6 +72,13 @@ section {
     margin-bottom: 100px;
 }
 
+sup {
+    font-size: 1.1em;
+    position: relative;
+    /* top: -0.1em; */
+    color: var(--red);
+}
+
 /* header together with hero*/
 /* header-top */
 .container {
@@ -329,14 +336,15 @@ dd {
 
 
 /* cervices */
-.services-grid{
+.services-grid-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
     /* grid-template-rows: repeat(2, 1fr); */
     align-items: stretch;
     min-height: 80vh;
+    margin-top: 60px;
 }
-.services-header {
+.services-header-2 {
     grid-column: span 2;
 }
 .service-card {
@@ -361,7 +369,7 @@ dd {
 .card-text{
 margin-bottom: 50px;
 }
-.services-header{
+.services-header-2, .services-header-3{
     background-color: var(--red);
     border: 1px solid var(--white);
     text-align: center;
@@ -376,4 +384,16 @@ margin-bottom: 50px;
 .card-title{
     text-transform: uppercase;
     font-size: 26px;
+}
+
+.services-grid-3{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);    /* we wont 2 colums with a size 1 fr which means 2 equal fractions, size unknown */
+    /* grid-template-rows: repeat(2, 1fr); */
+    align-items: stretch;
+    min-height: 80vh;
+    margin-top: 60px;
+}
+.services-header-3 {
+    grid-column: span 3;
 }
