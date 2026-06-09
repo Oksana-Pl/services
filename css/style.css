@@ -512,38 +512,44 @@ dd {
     overflow: hidden;
 }
 
-.reviews--item{
+.reviews--slider {
+    padding-bottom: 40px;
+}
+
+.reviews--item {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
     padding: 50px; 
 }
-.reviews--inner{
+
+.reviews--inner {
     display: flex;
 }
-.quotes-up-icon{
-    justify-self: start;
-}
-.quotes-down-icon{
+
+.quotes-down-icon {
     align-self: flex-end;
 }
 
-.reviews--item-arrow{
-    position: absolute;
-    bottom: 0;
-    
-
+/* arrows + heart */
+.reviews-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-top: 30px;
 }
 
-.reviews--slider{
-    padding-bottom: 40px;
+.reviews--item-prev,
+.reviews--item-next,
+.reviews-heart {
+    cursor: pointer;
 }
 
-.reviews--item-prev{
-
-}
-.reviews--item-next{
-
+.reviews--item-prev img,
+.reviews--item-next img,
+.reviews-heart img {
+    display: block;
 }
 
 /* contacts */
