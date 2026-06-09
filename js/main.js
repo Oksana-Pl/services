@@ -1,8 +1,9 @@
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.reviews--slider', {
 
+  
     // Navigation arrows
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.reviews--item-prev',
+      prevEl: '.reviews--item-next',
     },
   });
