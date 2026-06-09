@@ -98,6 +98,12 @@ h2{
     font-family: "Akrobat", sans-serif;
 }
 
+.portfolio-icon {
+    width: 50px;
+    max-width: 100%;
+    height: auto;
+}
+
 /* header together with hero*/
 /* header-top */
 .container {
