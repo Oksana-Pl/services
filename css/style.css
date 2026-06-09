@@ -585,3 +585,8 @@ dd {
     text-transform: uppercase;
     font-size: 26px;
 }
+
+.form--textarea {
+    min-height: 180px;
+    resize: vertical;
+}
