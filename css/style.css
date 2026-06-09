@@ -496,3 +496,13 @@ dd {
     color: var(--white);
 
 }
+
+/* contacts */
+.contact-form{
+    margin-bottom: 150px;
+}
+
+.contact-form--inner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
