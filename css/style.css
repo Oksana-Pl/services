@@ -520,15 +520,16 @@ dd {
 /* contacts */
 .contact-form{
     margin-bottom: 150px;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+    padding: 50px 0;
 }
 
 .contact-form--inner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px 0;
-    border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
-    margin-top: 50px;
+    /* padding: 50px 0; */
+    margin-top: 40px;
 }
 .contact-form--icons{
     display: flex;
