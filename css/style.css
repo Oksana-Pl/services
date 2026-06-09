@@ -80,7 +80,6 @@ a {
     font-size: 38px;
     text-align: center;
     text-transform: uppercase;
-
 }
 
 section {
@@ -92,6 +91,11 @@ sup {
     position: relative;
     /* top: -0.1em; */
     color: var(--red);
+}
+
+h2{
+    margin: 0;
+    font-family: "Akrobat", sans-serif;
 }
 
 /* header together with hero*/
@@ -299,7 +303,7 @@ sup {
 }
 
 dt {
-    font-size: 30px;
+    font-size: 28px;
     font-weight: 600;
     margin-bottom: 30px;
 }
@@ -383,7 +387,7 @@ dd {
     /* grid-template-rows: repeat(2, 1fr); */
     align-items: stretch;
     min-height: 80vh;
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 .services-header-2 {
@@ -422,6 +426,7 @@ dd {
     border: 1px solid var(--white);
     text-align: center;
     letter-spacing: 1px;
+    padding: 25px 0;
 }
 
 .service-card {
@@ -493,7 +498,7 @@ dd {
     letter-spacing: 1px;
 }
 
-.dropdown{
+/* .dropdown{
     background-color: transparent;
     border:none;
     font-family: var(--font-main);
@@ -504,7 +509,7 @@ dd {
     margin: 25px o;
     color: var(--white);
 
-}
+} */
 
 /* contacts */
 .contact-form{
@@ -517,6 +522,7 @@ dd {
     padding: 50px 0;
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
+    margin-top: 50px;
 }
 .contact-form--icons{
     display: flex;
