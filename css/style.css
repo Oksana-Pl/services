@@ -528,6 +528,11 @@ dd {
     transition: transform 0.3s ease;
     max-height: 250px;
     width: auto;
+
+    filter: brightness(70%) saturate(80%);
+    transition: 
+        filter 0.4s ease,
+        transform 0.4s ease;
     
 }
 .gallery:hover .gallery-inner {
@@ -535,6 +540,10 @@ dd {
 }
 .gallery-item:hover .gallery-img {
     transform: scale(1.03);
+}
+.gallery-item:hover .gallery-img {
+    filter: brightness(100%) saturate(100%);
+    transform: scale(1.04);
 }
 
 
