@@ -760,7 +760,7 @@ dd {
         max-height: 65vh;
     }
     .hero__inner__text{
-    margin: 0.5em;
+    margin: 0.5em auto;
    }
    .hero-title{
     font-size: 70px;
@@ -783,14 +783,17 @@ dd {
 }
 
 @media (max-width: 840px){
+    body{
+        font-size: 18px;
+    }
     .hero__inner__img {
-        max-height: 55vh;
+        max-height: 40vh;
     }
     .hero-title{
-        font-size: 60px;
+        font-size: 50px;
      }
     .hero-title-decor{
-        font-size: 60px;
+        font-size: 50px;
     }
     .menu__list{
         display: none;
@@ -802,8 +805,45 @@ dd {
     }
     .hero-btn {
         margin-top: 10px;
+        margin-bottom: 30px;
     }
     .menu{
         order: -1;  /* switch places logo and burger menu  */
+    }
+    .hero-btn{
+        width: 100%;
+        text-align: center;
+    }
+    .header{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+@media (max-width: 680px){
+    
+    .hero__inner__box {
+        max-width: 100%;
+    }
+    .hero__inner {
+        display: block;
+        text-align: center;
+    }
+    .hero-title-box {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        gap: 0 10px;
+        text-align: center;
+    }
+    .hero__inner__text{
+        max-width: 540px;
+    }
+    .hero-btn{
+        max-width: 540px;
+        text-align: center;
     }
 }
