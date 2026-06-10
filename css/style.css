@@ -759,6 +759,9 @@ dd {
 .mob-true{
     display: none;
 }
+.logo-mobile{
+    display: none;
+}
 
 @media (max-width: 1090px){
     .hero__inner__img {
@@ -865,7 +868,7 @@ dd {
 
 @media (max-width: 680px){
     .logo__img {
-        max-height: 30px;
+        max-height: 40px;
     }
     .hero__inner__img {
         max-height: 40vh;
@@ -888,4 +891,39 @@ dd {
         font-size: 20px;
     }
    
+}
+
+@media (max-width: 480px){
+    .logo-desktop{
+        display: none;
+    }
+    .logo-mobile{
+        display: block;
+  
+    }
+    .logo-mob {
+        max-height: 50px;
+        width: auto;
+      }
+      .header__inner{
+        max-width: 420px;
+    }
+    .hero__inner__img {
+        max-height: 30vh;
+    }
+    .hero-btn{
+        padding: 10px 15px;
+    }
+}
+
+@media (max-width: 394px){
+    body{
+        font-size: 16px;
+    }
+    .hero-title{
+        font-size: 35px;
+     }
+    .hero-title-decor{
+        font-size: 35px;
+    }
 }
