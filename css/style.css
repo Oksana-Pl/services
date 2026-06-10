@@ -307,7 +307,9 @@ h2{
     text-align: left;
     /* gap: 0 30px; */
 }
-
+.inner-list > div {
+    flex: 1;
+}
 dt {
     font-size: 28px;
     font-weight: 600;
@@ -502,6 +504,7 @@ dd {
     text-align: center;
     box-sizing: border-box;
     letter-spacing: 1px;
+    margin-bottom: 50px;
 }
 
 /* gallery */
@@ -557,10 +560,23 @@ dd {
     }
 } 
 
-/* body {
-    overflow-x: hidden;
-} */
-
+/* why me */
+.titel-decorative{
+    font-family: var(--font-decorative);
+    font-style: italic;
+    text-transform: capitalize;
+    font-size: 38px;
+    text-align: center;
+    
+}
+.titel-decorative-add{
+    color: var(--red);
+    text-transform: uppercase;
+}
+.why-me--text{
+    text-align: center;
+    margin: 50px 0;;
+}
 /* clients's feedback */
 .swiper {
     max-width: 1200px;
