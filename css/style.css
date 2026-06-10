@@ -107,10 +107,10 @@ h2{
 /* header together with hero*/
 /* header-top */
 .container {
-    max-width: 1220px;
+    max-width: 1240px;
     margin: 0 auto;
     /* center elements */
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
 .container-header {
@@ -751,3 +751,10 @@ dd {
     justify-self: end;
 }
 
+
+
+
+
+@media (max-width: 768px){
+    
+}
