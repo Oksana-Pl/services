@@ -753,9 +753,14 @@ dd {
 
 
 
+.menu-btn{
+    display: none;
+}
+.mob-true{
+    display: none;
+}
 
-
-@media (max-width: 1000px){
+@media (max-width: 1090px){
     .hero__inner__img {
         max-height: 65vh;
     }
@@ -799,6 +804,7 @@ dd {
         display: none;
     }
     .menu-btn{
+        display: flex;
         border:none;
         background-color: transparent; 
         padding: 0;
@@ -821,6 +827,14 @@ dd {
 }
 
 @media (max-width: 680px){
+    .mob-true {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .mob-none{
+        display: none;
+    }
     
     .hero__inner__box {
         max-width: 100%;
