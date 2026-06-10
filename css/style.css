@@ -861,3 +861,30 @@ dd {
         text-align: center;
     }
 }
+
+@media (max-width: 680px){
+    .logo__img {
+        max-height: 30px;
+    }
+    .hero__inner__img {
+        max-height: 40vh;
+    }
+    .hero-title{
+        font-size: 40px;
+     }
+    .hero-title-decor{
+        font-size: 40px;
+    }
+    .header__inner{
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .header-top {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .form-control, .dropdown-content a {
+        font-size: 20px;
+    }
+   
+}
