@@ -800,7 +800,9 @@ dd {
         background-color: transparent; 
         padding: 0;
     }
-
+    .hero-btn {
+        margin-top: 10px;
+    }
     .menu{
         order: -1;  /* switch places logo and burger menu  */
     }
