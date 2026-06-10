@@ -802,6 +802,6 @@ dd {
     }
 
     .menu{
-        order: -1;
+        order: -1;  /* switch places logo and burger menu  */
     }
 }
