@@ -784,7 +784,7 @@ dd {
 
 @media (max-width: 840px){
     .hero__inner__img {
-        max-height: 60vh;
+        max-height: 55vh;
     }
     .hero-title{
         font-size: 60px;
