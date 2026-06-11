@@ -231,9 +231,17 @@ h2{
 }
 
 /* hero */
+.header {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+}
 
 .header__inner {
-    min-height: 100vh;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    min-height: auto;
 }
 
 .hero__inner__img {
@@ -845,10 +853,22 @@ dd {
         width: 100%;
         text-align: center;
     }
-    .header{
-        margin-top: auto;
-        margin-bottom: auto;
+    .header {
+        min-height: auto;
     }
+    .header__inner {
+        padding: 40px 0;
+    }
+    .what-i-do-content, .references-content {
+        gap:30px;
+    }
+    .what-i-do .inner-list div {
+        padding: 0 15px;
+    }
+    .portfolio-text {
+        font-size: 24px;
+    }
+
 }
 
 @media (max-width: 680px){
