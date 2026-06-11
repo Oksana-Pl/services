@@ -1108,5 +1108,7 @@ dd {
 
 
 @media (max-width: 394px){
-
+    .my-clients .clients-list{
+        padding: 20px;
+    }
 }
