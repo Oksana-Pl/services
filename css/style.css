@@ -771,6 +771,7 @@ dd {
     display: none;
 }
 
+
 @media (max-width: 1090px){
     .hero__inner__img {
         max-height: 65vh;
@@ -786,6 +787,7 @@ dd {
    }
 }
 
+
 @media (max-width: 900px){
     .hero__inner__img {
         max-height: 60vh;
@@ -797,6 +799,7 @@ dd {
         font-size: 60px;
     }
 }
+
 
 @media (max-width: 840px){
     body{
@@ -843,7 +846,7 @@ dd {
         z-index: 2;
     }
     .hero-btn {
-        margin-top: 10px;
+        margin-top: 30px;
         margin-bottom: 30px;
     }
     .menu{
@@ -870,6 +873,7 @@ dd {
     }
 
 }
+
 
 @media (max-width: 680px){
     .mob-true {
@@ -905,7 +909,15 @@ dd {
         max-width: 540px;
         text-align: center;
     }
+    .inner-list {
+        flex-direction: column;
+    }
+    .portfolio-links {
+        justify-content: center;
+        width: 100%;
+    }
 }
+
 
 @media (max-width: 680px){
     .logo__img {
@@ -931,8 +943,33 @@ dd {
     .form-control, .dropdown-content a {
         font-size: 20px;
     }
-   
+    .what-i-do .inner-list div,
+    .references .inner-list div {
+        border-right: none;
+        border-left: none;
+        border-bottom: 1px solid var(--white);
+        padding: 30px 0;
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .inner-list > div:first-child {
+        border-left: none;
+    }
+    .inner-list > div:last-child {
+        border-bottom: none;
+    }
+    .footer--links .portfolio-icon {
+        width: 50px;
+        min-width: 50px;
+    }
+
+    .footer--links a {
+        flex-shrink: 0;
+    }
 }
+
 
 @media (max-width: 480px){
     .logo-desktop{
@@ -956,6 +993,7 @@ dd {
         padding: 10px 15px;
     }
 }
+
 
 @media (max-width: 394px){
     body{
