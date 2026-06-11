@@ -935,6 +935,9 @@ dd {
        section{
         margin-bottom: 50px;
        }
+       .reviews--inner{
+        margin-top: 30px;
+       }
 }
 
 
@@ -951,6 +954,10 @@ dd {
     }
     .service-card{
         padding: 40px;
+    }
+    .reviews--item-heart{
+        height: 35px;
+        width: auto;
     }
 }
 
@@ -1166,6 +1173,11 @@ dd {
         margin-block-start: 0.5em;
         margin-block-end: 0.5em;
     }
+
+    .quotes-up-icon, .quotes-down-icon{
+        height: 30px;
+        width: auto;
+    }
 }
 
 
@@ -1184,6 +1196,9 @@ dd {
     }
     .services-other{
         gap:20px;
+    }
+    .reviews-navigation{
+        margin-top: 20px;
     }
 }
 
