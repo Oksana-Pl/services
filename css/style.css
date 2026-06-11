@@ -322,6 +322,7 @@ dt {
     font-size: 28px;
     font-weight: 600;
     margin-bottom: 30px;
+    text-transform: uppercase;
 }
 
 dd {
@@ -785,6 +786,19 @@ dd {
    .hero-title-decor{
     font-size: 70px;
    }
+   .clients-list{
+    padding: 30px;
+   }
+   dt{
+    font-size: 24px;
+   }
+   .clients-img{
+    max-height: 60px;
+    width: auto;
+   }
+   .clients-list .clients-img {
+    margin-bottom: 30px;
+   }
 }
 
 
@@ -798,6 +812,9 @@ dd {
     .hero-title-decor{
         font-size: 60px;
     }
+    .clients-list{
+        padding: 25px;
+       }
 }
 
 
@@ -829,7 +846,6 @@ dd {
         transform: translateY(-120%);   /*navigation+js*/
         transition: transform .3s ease;
     }
-
     .menu__list.menu--open{    /*navigation+js*/
         transform: translateX(0%);
     }
@@ -871,7 +887,16 @@ dd {
     .portfolio-text {
         font-size: 24px;
     }
-
+    dt{
+        font-size: 22px;
+       }
+       .clients-img{
+        max-height: 50px;
+        width: auto;
+       }
+       .clients-list{
+        padding: 15px;
+       }
 }
 
 
@@ -968,6 +993,35 @@ dd {
     .footer--links a {
         flex-shrink: 0;
     }
+    .my-clients .inner-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .my-clients .clients-list {
+        width: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px;
+        border: 1px solid var(--white);
+        border-bottom: none;
+        align-items: center;
+        text-align: center;
+    }
+    .my-clients .clients-list:first-child {
+        border-left: 1px solid var(--white);
+    }
+    .my-clients .clients-list:last-child {
+        border-bottom: 1px solid var(--white);
+    }
+    .my-clients .clients-list:not(:last-child) {
+        border-right: 1px solid var(--white) !important;
+    }
+    .clients-list dt,
+    .clients-list dd,
+    .clients-link {
+        text-align: center;
+    }
 }
 
 
@@ -1034,6 +1088,9 @@ dd {
     .footer--logo {
         order: 3;
     }
+    .title{
+        font-size: 32px;
+    }
 }
 
 
@@ -1047,4 +1104,9 @@ dd {
     .hero-title-decor{
         font-size: 35px;
     }
+}
+
+
+@media (max-width: 394px){
+
 }
