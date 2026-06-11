@@ -814,12 +814,11 @@ dd {
         text-align: center;
         z-index: 1;
         background-color: var(--black);
-        border-top: 1px solid var(--white);
         border-bottom: 1px solid var(--white);
         transform: translateX(-120%);
     }
 
-    .menu__list, .menu--open{
+    .menu__list.menu--open{
         transform: translateX(0%);
     }
     .menu__link{
