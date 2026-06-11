@@ -932,6 +932,9 @@ dd {
        ul{
         padding-inline-start: 20px;
        }
+       section{
+        margin-bottom: 50px;
+       }
 }
 
 
@@ -1101,6 +1104,9 @@ dd {
     }
     .card-text{
         margin-bottom: 25px;
+    }
+    .why-me--text {
+        margin: 25px 0;
     }
     
 }
