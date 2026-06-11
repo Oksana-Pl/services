@@ -799,6 +799,24 @@ dd {
    .clients-list .clients-img {
     margin-bottom: 30px;
    }
+   .gallery-img{
+    max-height: 200px;
+   }
+   .services-header-2, .services-header-3, .services-header-others {
+    padding: 20px 0;
+   }
+   .service-card {
+    padding: 20px;
+   }
+   .services-grid-2{
+    margin-top: 40px;
+   }
+   .my-clients .three-arias{
+    margin-top: 40px;
+   }
+   .what-i-do-content, .references-content{
+    margin-top: 20px;
+   }
 }
 
 
@@ -897,6 +915,40 @@ dd {
        .clients-list{
         padding: 15px;
        }
+       h3{
+        margin-block-start:0.5em;
+        margin-block-end:0.5em;
+       }
+       .service-card {
+        padding: 15px;
+       }
+       .gallery-img{
+        max-height: 150px;
+       }
+       .other--list--item {
+        padding: 15px;
+        font-size: 22px;
+       }
+       ul{
+        padding-inline-start: 20px;
+       }
+}
+
+
+@media (max-width: 760px){
+    .services-grid-2,
+    .services-grid-3 {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .services-header-2,
+    .services-header-3 {
+        grid-column: 1 / -1;
+    }
+    .service-card{
+        padding: 40px;
+    }
 }
 
 
@@ -1022,6 +1074,9 @@ dd {
     .clients-link {
         text-align: center;
     }
+    .other--list{
+        gap:20px;
+    }
 }
 
 
@@ -1041,6 +1096,13 @@ dd {
         text-align: center;
         justify-self: center;
     }
+    .service-card{
+        padding: 30px;
+    }
+    .card-text{
+        margin-bottom: 25px;
+    }
+    
 }
 
 @media (max-width: 480px){
@@ -1091,6 +1153,13 @@ dd {
     .title{
         font-size: 32px;
     }
+    .service-card{
+        padding: 20px;
+    }
+    p{
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+    }
 }
 
 
@@ -1103,6 +1172,12 @@ dd {
      }
     .hero-title-decor{
         font-size: 35px;
+    }
+    .services-header-2, .services-header-3, .services-header-others {
+        padding: 15px 20px;
+    }
+    .services-other{
+        gap:20px;
     }
 }
 
