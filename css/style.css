@@ -317,6 +317,8 @@ h2{
 }
 .inner-list > div {
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
 dt {
     font-size: 28px;
@@ -586,6 +588,15 @@ dd {
     text-align: center;
     margin: 50px 0;;
 }
+
+/* references */
+.reference-card {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 /* clients's feedback */
 .swiper {
     max-width: 1200px;
@@ -666,7 +677,6 @@ dd {
     border-bottom: 1px solid var(--white);
     padding: 50px 0;
 }
-
 .contact-form--inner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -752,7 +762,6 @@ dd {
     font-weight: 200;
     justify-self: center;
     text-align: center;
-
 }
 .footer--links{
     display: flex;
@@ -817,6 +826,9 @@ dd {
    .what-i-do-content, .references-content{
     margin-top: 20px;
    }
+   .references .inner-list div {
+    padding: 0 20px;
+   }
 }
 
 
@@ -833,6 +845,10 @@ dd {
     .clients-list{
         padding: 25px;
        }
+       dt {
+        margin-bottom: 20px;
+       }
+       
 }
 
 
@@ -959,6 +975,12 @@ dd {
         height: 35px;
         width: auto;
     }
+    .references .inner-list div{
+        padding: 0 15px;
+    }
+    .clients-link{
+        font-size: 22px;
+    }
 }
 
 
@@ -1002,6 +1024,22 @@ dd {
     .portfolio-links {
         justify-content: center;
         width: 100%;
+    }
+    .referensec-text{
+        text-align: center;
+        margin-block-start:0.5em;
+        margin-block-end:0.5em;
+    }
+    .service-text-note {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+    dl{
+        margin-block-start: 0.5em;
+        margin-block-end: 0.5em;
+    }
+    .references .inner-list div{
+        padding: 20px 0;
     }
 }
 
@@ -1178,12 +1216,18 @@ dd {
         height: 30px;
         width: auto;
     }
+    .references .inner-list div{
+        padding: 15px 0;
+    }
+    .references-content {
+        gap: 20px;
+    }
 }
 
 
 @media (max-width: 394px){
     body{
-        font-size: 16px;
+        font-size: 17px;
     }
     .hero-title{
         font-size: 35px;
@@ -1200,11 +1244,27 @@ dd {
     .reviews-navigation{
         margin-top: 20px;
     }
+    .arrow {
+        max-width: 20px;
+        height: auto;
+    }
+    .what-i-do, .references {
+        padding: 40px 0;
+    }
+    .what-i-do-content, .references-content {
+        gap: 20px;
+    }
+    .what-i-do .inner-list div, .references .inner-list div{
+        padding: 20px 0;
+    }
 }
 
 
-@media (max-width: 394px){
+@media (max-width: 360px){
     .my-clients .clients-list{
         padding: 20px;
+    }
+    .references div dd{
+        margin-bottom: 15px;
     }
 }
