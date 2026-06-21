@@ -35,3 +35,5 @@ const swiper = new Swiper('.reviews--slider', {
  menuBtn.addEventListener('click', () => {
 menuList.classList.toggle('menu--open');
  });
+
+
