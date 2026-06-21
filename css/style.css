@@ -459,6 +459,9 @@ dd {
     text-transform: uppercase;
     font-size: 26px;
 }
+.header-title{
+    text-transform: uppercase;
+}
 
 .services-grid-3 {
     display: grid;
