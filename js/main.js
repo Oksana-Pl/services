@@ -32,8 +32,9 @@ const swiper = new Swiper('.reviews--slider', {
  const menuBtn = document.querySelector('.menu-btn');
  const menuList = document.querySelector('.menu__list');
 
- menuBtn.addEventListener('click', () => {
+menuBtn.addEventListener('click', () => {
 menuList.classList.toggle('menu--open');
  });
+
 
 
