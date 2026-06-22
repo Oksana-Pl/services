@@ -103,6 +103,7 @@ h2{
     max-width: 100%;
     height: auto;
 }
+
 /* //hover */
 .hero-btn,
 .card-btn,
@@ -110,7 +111,6 @@ h2{
     transition: background-color .3s ease; /*ease-easy transition when hover - how to do the hower*/
     transition: transform 0.3s ease;
 }
-
 .portfolio-website,
 .portfolio-behance,
 .clients-link{
