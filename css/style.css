@@ -585,7 +585,7 @@ dd {
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
     will-change: transform;
-    animation: gallery-scroll 60s linear infinite;
+    animation: gallery-scroll 40s linear infinite;
     cursor: pointer;
 } 
 .gallery-img{
