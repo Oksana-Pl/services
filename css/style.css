@@ -120,7 +120,10 @@ h2{
     color: rgb(255, 21, 21);
     transform: translateX(2px);
 }
-
+.menu__item:hover{
+    text-shadow: 0 0 8px rgb(239, 16, 68);
+    transform: translateX(2px);
+}
 .portfolio-website:hover,
 .portfolio-behance:hover{
     transform: translateX(2px);  /*exactly what to do when hover, how to do the hover is declared above*/
