@@ -103,6 +103,49 @@ h2{
     max-width: 100%;
     height: auto;
 }
+/* //hover */
+.hero-btn,
+.card-btn,
+.form--btn{
+    transition: background-color .3s ease; /*ease-easy transition when hover - how to do the hower*/
+    transition: transform 0.3s ease;
+}
+
+.portfolio-website,
+.portfolio-behance,
+.clients-link{
+    transition: transform 0.3s ease;
+}
+.clients-link:hover{
+    color: rgb(255, 21, 21);
+    transform: translateX(2px);
+}
+
+.portfolio-website:hover,
+.portfolio-behance:hover{
+    transform: translateX(2px);  /*exactly what to do when hover, how to do the hover is declared above*/
+}
+.hero-btn:hover,
+.card-btn:hover,
+.form--btn:hover{
+    /* background-color: var(--red-dark); */
+    transform: translateX(2px);
+    box-shadow: 0 0 7px rgb(255, 255, 255);
+}
+.hero-btn:focus,
+.card-btn:focus,
+.form--btn:focus{
+    /* background-color: var(--red-dark); */
+    transform: translateX(2px);
+    box-shadow: 0 0 7px rgb(255, 255, 255);
+}
+.hero-btn:active,
+.card-btn:active,
+.form--btn:active{
+    background-color: var(--red-dark);
+    transform: translateX(2px);
+    box-shadow: 0 0 7px rgb(255, 255, 255);
+}
 
 /* header together with hero*/
 /* header-top */
