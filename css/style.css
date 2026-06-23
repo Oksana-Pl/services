@@ -678,14 +678,18 @@ dd {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-   
+    height: auto;
 }
-
+.reviews-item-text {
+    margin-bottom: 20px;
+}
 .reviews--inner {
     display: flex;
     margin-top: 50px;
 }
-
+.reviews-autor {
+    margin-top: auto;
+}
 .quotes-down-icon {
     align-self: flex-end;
 }
