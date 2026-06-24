@@ -103,7 +103,9 @@ h2{
     max-width: 100%;
     height: auto;
 }
-
+.form-success{
+    display: none;
+}
 /* //hover */
 .hero-btn,
 .card-btn,
