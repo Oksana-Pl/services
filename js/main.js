@@ -36,11 +36,10 @@ menuBtn.addEventListener('click', () => {
 menuList.classList.toggle('menu--open');
  });
 
- 
+
 /**form */
  const form = document.getElementById('contact-form');
 const successMessage = document.getElementById('success-message');
-const sendAgainBtn = document.getElementById('send-again');
 
 form.addEventListener('submit', async function (e) {
     e.preventDefault();
@@ -60,9 +59,4 @@ form.addEventListener('submit', async function (e) {
         successMessage.classList.add('active');
         form.reset();
     }
-});
-
-sendAgainBtn.addEventListener('click', function () {
-    successMessage.classList.remove('active');
-    form.style.display = 'flex';
 });
