@@ -110,6 +110,9 @@ h2{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
 }
 /* //hover */
 .hero-btn,
