@@ -36,39 +36,33 @@ menuBtn.addEventListener('click', () => {
 menuList.classList.toggle('menu--open');
  });
 
-
+ 
+/**form */
  const form = document.getElementById('contact-form');
- const successMessage = document.getElementById('success-message');
- const sendAgainBtn = document.getElementById('send-again');
- 
- form.addEventListener('submit', async (e) => {
- 
-     e.preventDefault();
- 
-     const data = new FormData(form);
- 
-     const response = await fetch(form.action, {
-         method: form.method,
-         body: data,
-         headers: {
-             'Accept': 'application/json'
-         }
-     });
- 
-     if(response.ok){
- 
-         form.style.display = 'none';
- 
-         successMessage.classList.add('active');
- 
-         form.reset();
-     }
- });
- 
- sendAgainBtn.addEventListener('click', () => {
- 
-     successMessage.classList.remove('active');
- 
-     form.style.display = 'flex';
- 
- });
+const successMessage = document.getElementById('success-message');
+const sendAgainBtn = document.getElementById('send-again');
+
+form.addEventListener('submit', async function (e) {
+    e.preventDefault();
+
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+    });
+
+    if (response.ok) {
+        form.style.display = 'none';
+        successMessage.classList.add('active');
+        form.reset();
+    }
+});
+
+sendAgainBtn.addEventListener('click', function () {
+    successMessage.classList.remove('active');
+    form.style.display = 'flex';
+});
