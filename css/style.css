@@ -327,7 +327,9 @@ h2{
 .hero-title-box {
     max-width: 540px;
 }
-
+.hero-title-box.ru, .hero-title-box.ukr{
+    max-width: 800px
+}
 .hero-title {
     font-size: 80px;
     font-style: normal;
@@ -340,6 +342,9 @@ h2{
     font-style: italic;
     font-weight: 800;
     /* margin: 40px 0; */
+}
+.hero-title-decor.ukr, .hero-title-decor.ru{
+    font-size: 70px;
 }
 
 .hero-btn {
@@ -905,6 +910,9 @@ dd {
    .form--input{
     margin-bottom: 20px;
    }
+   .hero-title-decor.ukr, .hero-title-decor.ru{
+    font-size: 50px;
+   }
 }
 
 
@@ -923,6 +931,9 @@ dd {
        }
        dt {
         margin-bottom: 20px;
+       }
+       .hero-title-decor.ukr, .hero-title-decor.ru{
+        font-size: 45px;
        }
        
 }
@@ -1072,6 +1083,9 @@ dd {
        .form--input::placeholder {
         font-size: 20px;
     }
+    .hero-title-decor.ukr, .hero-title-decor.ru{
+        font-size: 40px;
+       }
 }
 
 
@@ -1343,6 +1357,9 @@ dd {
     .references-content {
         gap: 20px;
     }
+    .hero-title-decor.ukr, .hero-title-decor.ru{
+        font-size: 32px;
+       }
 }
 
 
