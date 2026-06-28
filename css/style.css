@@ -601,8 +601,6 @@ dd {
 
 /* gallery */
 .gallery {
-    /* width: 100%; */
-    /* max-width: 1200px; */
     margin: 0 auto;
     overflow: hidden;
     width: 100vw;
