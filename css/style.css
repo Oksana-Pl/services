@@ -935,6 +935,9 @@ dd {
    .hero-title-decor.ukr, .hero-title-decor.ru{
     font-size: 50px;
    }
+   .gallery-item{
+    height: 200px;
+   }
 }
 
 
@@ -1066,6 +1069,9 @@ dd {
        .form--input{
         padding: 10px 15px;
         font-size: 20px;
+       }
+       .gallery-item{
+        height: 200px;
        }
 }
 
