@@ -623,7 +623,7 @@ dd {
 .gallery-img{
     border-radius: 20px;
     display: block;
-    max-height: 250px;
+    height: 100%;
     width: auto;
     object-fit: cover;
     transition: transform 0.3s ease;
@@ -905,9 +905,9 @@ dd {
    .clients-list .clients-img {
     margin-bottom: 30px;
    }
-   .gallery-img{
+   /* .gallery-img{
     max-height: 200px;
-   }
+   } */
    .services-header-2, .services-header-3, .services-header-others {
     padding: 20px 0;
    }
@@ -1050,9 +1050,9 @@ dd {
        .service-card {
         padding: 15px;
        }
-       .gallery-img{
+       /* .gallery-img{
         max-height: 150px;
-       }
+       } */
        .other--list--item {
         padding: 15px;
         font-size: 22px;
