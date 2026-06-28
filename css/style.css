@@ -638,7 +638,7 @@ dd {
 .gallery-item {
     display: flex;
     align-items: center;
-    height: 250px;
+    height: 180px;
     flex-shrink: 0;
     line-height: 0;
 }
@@ -936,7 +936,7 @@ dd {
     font-size: 50px;
    }
    .gallery-item{
-    height: 200px;
+    height: 150px;
    }
 }
 
@@ -1071,7 +1071,7 @@ dd {
         font-size: 20px;
        }
        .gallery-item{
-        height: 200px;
+        height: 120px;
        }
 }
 
