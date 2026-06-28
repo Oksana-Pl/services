@@ -638,11 +638,9 @@ dd {
 .gallery-item {
     display: flex;
     align-items: center;
+    height: 250px;
     flex-shrink: 0;
     line-height: 0;
-}
-.gallery video.gallery-img {
-    height: 250px;
 }
 .gallery:hover .gallery-inner {
     animation-play-state: paused;
