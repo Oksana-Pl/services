@@ -622,6 +622,10 @@ dd {
 } 
 .gallery-img{
     border-radius: 20px;
+    display: block;
+    max-height: 250px;
+    width: auto;
+    object-fit: cover;
     transition: transform 0.3s ease;
     max-height: 250px;
     width: auto;
@@ -630,6 +634,15 @@ dd {
     transition: 
         filter 0.4s ease,
         transform 0.4s ease;
+}
+.gallery-item {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    line-height: 0;
+}
+.gallery video.gallery-img {
+    height: 250px;
 }
 .gallery:hover .gallery-inner {
     animation-play-state: paused;
