@@ -671,12 +671,13 @@ dd {
 
 
 /* clients's feedback */
+/* swiper */
 .swiper {
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
 }
-.gallery-swiper.swiper {
+.gallery-swiper.swiper { /* перебивает стили главного свайпера выше*/
     max-width: none;
     width: 100vw;
     margin-left: calc(50% - 50vw);
