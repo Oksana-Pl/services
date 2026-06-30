@@ -636,7 +636,13 @@ dd {
     filter: brightness(100%) saturate(100%);
     transform: scale(1.05);
 }
-
+.swiper-free-mode>.swiper-wrapper {
+    margin: 20px auto;
+}
+.gallery-pagination .swiper-pagination-bullet {
+    background-color: var(--white);
+    opacity: 0.2;
+}
 .gallery-pagination .swiper-pagination-bullet-active {
     background: var(--red-dark); 
     opacity: 1;
@@ -850,8 +856,6 @@ dd {
     gap: 20px;
     justify-self: end;
 }
-
-
 
 .menu-btn{
     display: none;
