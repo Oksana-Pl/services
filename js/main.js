@@ -62,3 +62,25 @@ form.addEventListener('submit', async function (e) {
 });
 
 
+
+
+const gallerySwiper = new Swiper('.gallery-swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+
+  freeMode: true,
+
+  mousewheel: {
+    forceToAxis: true,
+  },
+
+  watchSlidesProgress: true,
+  observer: true,
+  observeParents: true,
+
+  pagination: {
+    el: '.gallery-pagination',
+    clickable: true,
+  },
+
+});

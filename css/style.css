@@ -604,63 +604,46 @@ dd {
     margin: 0 auto;
     overflow: hidden;
     width: 100vw;
-    margin-left: calc(50% - 50vw);
+    /* margin-left: calc(50% - 50vw); */
+    /* border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white); */
+    padding: 20px 0 40px;
 }
 
 .gallery-inner {
     display: flex;
-    gap: 24px;
-    width: max-content;
-    padding: 20px 0;
-    border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
-    will-change: transform;
-    animation: gallery-scroll 40s linear infinite;
-    cursor: pointer;
-} 
-.gallery-img{
-    border-radius: 20px;
-    display: block;
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-    max-height: 250px;
-    width: auto;
-
-    filter: brightness(70%) saturate(80%);
-    transition: 
-        filter 0.4s ease,
-        transform 0.4s ease;
 }
+
 .gallery-item {
-    display: flex;
-    align-items: center;
+    width: fit-content !important;
     height: 200px;
     flex-shrink: 0;
     line-height: 0;
+    border-radius: 20px;
+    overflow: hidden;
 }
-.gallery:hover .gallery-inner {
-    animation-play-state: paused;
-} 
-.gallery-item:hover .gallery-img {
-    transform: scale(1.03);
+
+.gallery-img {
+    height: 100%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+
+    filter: brightness(70%) saturate(80%);
+    transition: filter 0.4s ease, transform 0.4s ease;
 }
+
 .gallery-item:hover .gallery-img {
     filter: brightness(100%) saturate(100%);
-    transform: scale(1.08);
+    transform: scale(1.05);
+}
+
+.gallery-pagination .swiper-pagination-bullet-active {
+    background: var(--red-dark); 
+    opacity: 1;
 }
 
 
-@keyframes gallery-scroll {
-    from {
-        transform: translateX(0);
-    }
-
-    to {
-        transform: translateX(-50%);
-    }
-} 
 
 /* why me */
 .titel-decorative{
@@ -684,7 +667,6 @@ dd {
 .reference-card {
     display: flex;
     flex-direction: column;
-
 }
 
 
@@ -694,11 +676,16 @@ dd {
     margin: 0 auto;
     overflow: hidden;
 }
-
+.gallery-swiper.swiper {
+    max-width: none;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    overflow: hidden;
+}
 .reviews--slider {
     padding-bottom: 40px;
 }
-
 .reviews--item {
     display: flex;
     flex-direction: column;
