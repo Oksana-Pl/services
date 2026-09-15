@@ -1431,3 +1431,20 @@ dd {
         margin-bottom: 15px;
     }
 }
+
+/* Scroll reveals matching Portfolio_Oksana; enabled only by reveal.js. */
+.reveal-word { opacity: 0; transition: opacity .6s ease; }
+.text-visible .reveal-word { opacity: 1; }
+.reveal-card {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .7s ease var(--reveal-delay, 0s), transform .7s cubic-bezier(.22,1,.36,1) var(--reveal-delay, 0s);
+}
+.reveal-card.is-visible { opacity: 1; transform: none; }
+.reveal-card:focus-within { opacity: 1; transform: none; transition: none; }
+@media (max-width: 576px) {
+  .reveal-card { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal-word, .reveal-card { opacity: 1; transform: none; transition: none; }
+}
