@@ -123,6 +123,7 @@ h2{
 }
 .portfolio-website,
 .portfolio-behance,
+.portfolio-whatsapp,
 .clients-link{
     transition: transform 0.3s ease;
 }
@@ -151,7 +152,8 @@ h2{
     transform: scaleX(1);
 }
 .portfolio-website:hover,
-.portfolio-behance:hover{
+.portfolio-behance:hover,
+.portfolio-whatsapp:hover{
     transform: translateX(2px);  /*exactly what to do when hover, how to do the hover is declared above*/
 }
 .hero-btn:hover,
