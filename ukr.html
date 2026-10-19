@@ -2,15 +2,6 @@
 <html lang="uk">
 
     <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N81RL4CCH2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N81RL4CCH2');
-</script>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -73,7 +64,9 @@
 
         <link rel="icon" type="image/png" href="/favicon.png">
         <link rel="apple-touch-icon" href="/favicon.png">
-    </head>
+    <link rel="stylesheet" href="css/privacy.css">
+<script src="js/analytics-consent.js" defer></script>
+</head>
 
 <body>
     <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
@@ -626,7 +619,8 @@
                             <textarea class="form--input form--textarea" name="message" placeholder="Повідомлення" id="contact-message" required maxlength="5000"></textarea>
                             <button class="form--btn" type="submit">НАДІСЛАТИ</button>
                         </form>
-                        <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                        <p class="form-privacy-note">Ваше ім’я, email та повідомлення обробляються через Formspree для відповіді на ваш запит. <a href="privacy-uk.html">Політика конфіденційності</a>.</p>
+<p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
                         <div class="form-success" id="success-message" tabindex="-1">
                             <h3>Дякую!</h3>
                             <p>Ваше повідомлення успішно надіслано. Я зв’яжуся з вами найближчим часом.</p>
@@ -650,7 +644,7 @@
                     <p class="footer--text">Дизайн та розробка:
                         Оксана Плешкан © 2026
                     </p>
-                    <div class="footer--links">
+                    <div class="footer--social"><div class="footer--links">
                         <a class="portfolio-whatsapp" href="https://wa.me/353873744560" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/whatsapp.svg" width="50" height="50" alt="Написати Оксані Плешкан у WhatsApp"></a>
                         <a class="portfolio-behance" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую."><img class="portfolio-icon" src="images/email.svg"
                                 alt="Написати Оксані Плешкан електронною поштою"></a>
@@ -659,9 +653,10 @@
                         <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
                                 alt="Портфоліо та кейси Оксани Плешкан"></a>
                     </div>
+<nav class="privacy-links" aria-label="Політика конфіденційності"><a href="privacy-uk.html">Політика конфіденційності</a><button type="button" data-analytics-settings hidden>Налаштування аналітики</button></nav></div>
                 </div>
             </div>
-        </footer>
+</footer>
        
     
 

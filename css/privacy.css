@@ -1,0 +1,75 @@
+/* Use the site's local typeface on both the standalone policy and consent UI. */
+@font-face { font-family: "Akrobat"; src: url("../fonts/Akrobat-Regular.otf") format("opentype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Akrobat"; src: url("../fonts/Akrobat-SemiBold.otf") format("opentype"); font-weight: 600; font-style: normal; font-display: swap; }
+@font-face { font-family: "Akrobat"; src: url("../fonts/Akrobat-Bold.otf") format("opentype"); font-weight: 700; font-style: normal; font-display: swap; }
+.analytics-banner, .analytics-banner *, .privacy-page, .privacy-page * { box-sizing: border-box; }
+.analytics-banner[hidden], [data-analytics-settings][hidden] { display: none !important; }
+.analytics-banner {
+    position: fixed; z-index: 10000; bottom: 20px; left: 20px;
+    width: min(530px, calc(100% - 40px)); max-height: calc(100dvh - 40px);
+    overflow-y: auto; margin: 0; padding: 28px;
+    background: #1c1c1c; color: #fff; border: 1px solid #727272;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px #0008;
+    font: 400 20px/1.45 "Akrobat", sans-serif; text-align: left;
+}
+.analytics-banner h2 { margin: 0 0 14px; font: 700 28px/1.15 "Akrobat", sans-serif; color: #fff; }
+.analytics-banner p { margin: 0 0 22px; }
+.analytics-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
+.analytics-actions button {
+    flex: 1 1 160px; min-height: 48px; padding: 12px 18px;
+    border: 1px solid #fff; border-radius: 40px; background: #1c1c1c; color: #fff;
+    font: 700 18px/1.2 "Akrobat", sans-serif; text-transform: uppercase; cursor: pointer;
+    transition: background-color .2s ease;
+}
+.analytics-actions button[data-choice="allowed"] { background: #dc0033; border-color: #dc0033; }
+.analytics-actions button[data-choice="allowed"]:hover { background: #a40227; border-color: #a40227; }
+.analytics-actions button[data-choice="rejected"]:hover { background: #383838; }
+.analytics-actions a { flex-basis: 100%; text-align: center; color: #fff; text-decoration: underline; text-underline-offset: 4px; font-size: 18px; }
+.analytics-banner :focus-visible, .privacy-links :focus-visible, .privacy-page :focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.privacy-links { display: flex; justify-content: space-between; flex-wrap: nowrap; align-items: baseline; gap: 12px; padding: 16px 0 0; width: 100%; font: 400 18px/1.5 "Akrobat", sans-serif; }
+.privacy-links a, .privacy-links button { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+.privacy-links button, .privacy-page main button { background: none; border: 0; padding: 8px 0; font: inherit; cursor: pointer; }
+.privacy-links a:hover, .privacy-links button:hover, .analytics-actions a:hover { text-decoration-color: #fff; text-decoration-thickness: 2px; }
+.form-privacy-note { font-size: 18px; line-height: 1.5; margin-top: 12px; }
+.form-privacy-note a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+.contact-form--form .form-privacy-note { color: #fff; font: 400 18px/1.5 "Akrobat", sans-serif; margin-top: 16px; }
+.privacy-page { margin: 0; color: #fff; background: #1c1c1c; font: 400 21px/1.6 "Akrobat", sans-serif; }
+.privacy-page main { max-width: 960px; margin: auto; padding: 48px 32px 80px; overflow-wrap: anywhere; }
+.privacy-page main nav { padding-bottom: 24px; border-bottom: 1px solid #727272; }
+.privacy-page h1 { font: 700 clamp(36px, 6vw, 64px)/1.1 "Akrobat", sans-serif; text-transform: uppercase; margin: 40px 0 20px; }
+.privacy-page main h2 { font: 700 28px/1.25 "Akrobat", sans-serif; text-transform: uppercase; margin: 40px 0 16px; padding-left: 16px; border-left: 3px solid #dc0033; }
+.privacy-page main p { margin: 14px 0; }
+.privacy-page main a, .privacy-page main button { color: #fff; text-decoration: underline; text-decoration-color: #fff; text-underline-offset: 4px; }
+.privacy-page main a:hover, .privacy-page main button:hover { text-decoration-color: #fff; }
+.privacy-page table { border-collapse: collapse; width: 100%; font-size: 18px; }
+.privacy-page caption { text-align: left; font-weight: 600; margin-bottom: 12px; }
+.privacy-page th, .privacy-page td { border: 1px solid #727272; padding: 12px; text-align: left; vertical-align: top; }
+.privacy-page thead { background: #a40227; }
+.privacy-page main li { margin-bottom: 10px; }
+@media (max-width: 480px) {
+    .analytics-banner { padding: 22px; left: 12px; bottom: 12px; width: calc(100% - 24px); max-height: calc(100dvh - 24px); }
+    .analytics-banner h2 { font-size: 26px; }
+    .analytics-actions { gap: 12px; }
+    .analytics-actions button { flex-basis: 130px; padding-inline: 12px; }
+    .privacy-page main { padding: 28px 20px 60px; }
+    .privacy-page main h2 { font-size: 25px; }
+    .privacy-page th, .privacy-page td { padding: 8px; }
+}
+@media (prefers-reduced-motion: reduce) { .analytics-actions button { transition: none; } }
+
+/* The privacy links share the exact left and right edges of the social icons. */
+.footer--social { justify-self: end; width: 260px; max-width: 100%; }
+.footer--social .footer--links { justify-content: space-between; }
+.footer--social .privacy-links > * { max-width: calc(50% - 6px); overflow-wrap: anywhere; }
+.footer--social .privacy-links > :first-child { text-align: left; }
+.footer--social .privacy-links > :last-child { text-align: right; }
+.privacy-back { display: inline-flex; align-items: center; gap: 10px; }
+.privacy-back img { width: 30px; height: 30px; filter: brightness(0) invert(1); }
+@media (max-width: 480px) { .footer--social { order: 1; } }
+
+html:lang(ru) .footer--social .privacy-links, html:lang(uk) .footer--social .privacy-links { font-size: 16px; }
+html:lang(ru) .footer--social .privacy-links > :first-child,
+html:lang(uk) .footer--social .privacy-links > :first-child { max-width: calc(60% - 6px); }
+html:lang(ru) .footer--social .privacy-links > :last-child,
+html:lang(uk) .footer--social .privacy-links > :last-child { max-width: calc(40% - 6px); }

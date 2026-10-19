@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-N81RL4CCH2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-N81RL4CCH2');
-</script>
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -72,7 +63,9 @@
 
         <link rel="icon" type="image/png" href="/favicon.png">
         <link rel="apple-touch-icon" href="/favicon.png">
-    </head>
+    <link rel="stylesheet" href="css/privacy.css">
+<script src="js/analytics-consent.js" defer></script>
+</head>
 
 <body>
     <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -651,7 +644,8 @@
                             <textarea class="form--input form--textarea" name="message" placeholder="Message" id="contact-message" required maxlength="5000"></textarea>
                             <button class="form--btn" type="submit">SEND MESSAGE</button>
                         </form>
-                        <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                        <p class="form-privacy-note">Your name, email and message are processed through Formspree to respond to your enquiry. <a href="privacy.html">Privacy Policy</a>.</p>
+<p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
                         <div class="form-success" id="success-message" tabindex="-1">
                             <h3>Thank you!</h3>
                             <p>Your message has been sent successfully. I will get back to you soon.</p>
@@ -675,7 +669,7 @@
                     <p class="footer--text">Designed & Developed
                         By Oksana Pleshkan © 2026
                     </p>
-                    <div class="footer--links">
+                    <div class="footer--social"><div class="footer--links">
                         <a class="portfolio-whatsapp" href="https://wa.me/353873744560" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/whatsapp.svg" width="50" height="50" alt="Message Oksana Pleshkan on WhatsApp"></a>
                         <a class="portfolio-behance" href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you."><img class="portfolio-icon" src="images/email.svg"
                                 alt="Email Oksana Pleshkan"></a>
@@ -685,9 +679,10 @@
                         <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
                                 alt="Oksana Pleshkan portfolio and case studies"></a>
                     </div>
+<nav class="privacy-links" aria-label="Privacy Policy"><a href="privacy.html">Privacy Policy</a><button type="button" data-analytics-settings hidden>Analytics settings</button></nav></div>
                 </div>
             </div>
-        </footer>
+</footer>
        
     
 
