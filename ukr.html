@@ -31,6 +31,9 @@
         <meta property="og:url" content="https://oksanapleshkan.com/ukr.html">
         <meta property="og:image" content="https://oksanapleshkan.com/images/preview-serv.png">
     
+        <meta property="og:image:alt" content="Приклади дизайн-проєктів Оксани Плешкан">
+        <meta property="og:locale" content="uk_UA">
+
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Оксана Плешкан | UX/UI, веб та графічний дизайнер">
@@ -38,6 +41,23 @@
             content="Портфоліо UX/UI, веб та графічного дизайнера. Дизайн сайтів, лендингів, мобільних застосунків, брендинг, айдентика та моушн-графіка.">
         <meta name="twitter:image" content="https://oksanapleshkan.com/images/preview-serv.png">
     
+        <meta name="twitter:image:alt" content="Приклади дизайн-проєктів Оксани Плешкан">
+
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "https://oksanapleshkan.com/#person",
+            "name": "Oksana Pleshkan",
+            "url": "https://oksanapleshkan.com/",
+            "jobTitle": "UX/UI, Web & Graphic Designer",
+            "sameAs": [
+                "https://www.behance.net/oksanapleshkan",
+                "https://www.linkedin.com/in/oksana-pleshkan/"
+            ]
+        }
+        </script>
+
         <!-- Search optimisation -->
         <link rel="alternate" hreflang="en" href="https://oksanapleshkan.com/" />
         <link rel="alternate" hreflang="uk" href="https://oksanapleshkan.com/ukr.html" />
@@ -48,7 +68,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&display=swap"
             rel="stylesheet">
-        <link rel="stylesheet" href="css/reset.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
         <link rel="stylesheet" href="css/style.css" />
 
@@ -57,6 +76,7 @@
     </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Перейти до основного вмісту</a>
     <!-- header together with hero -->
     <header class="header">
         <div class="container-header">
@@ -64,21 +84,21 @@
 
                 <a class="logo logo-desktop" href="#hero">
                     <img class="logo__img logo-desk" src="images/logo.svg"
-                    alt="Логотип Оксани Плешкан — UX/UI дизайнерка, вебдизайнерка, графічна дизайнерка та Front-End розробниця, Україна, Європа, Харків">
+                    alt="Оксана Плешкан — на початок сторінки">
                 </a>
-                <a class="logo logo-mobile" href="#">
+                <a class="logo logo-mobile" href="#hero">
                     <img class="logo__img logo-mob" src="images/logo-mob.svg"
-                    alt="Логотип Оксани Плешкан — UX/UI дизайнерка, вебдизайнерка, графічна дизайнерка та Front-End розробниця, Дизайн вебсайту Україна, Розробка вебсайту в Україні, гарний дизайнер в Україні, найкращі дизайнери України">
+                    alt="Оксана Плешкан — на початок сторінки">
                 </a>
-                <nav class="menu">
-                    <button class="menu-btn">
-                        <svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <nav class="menu" aria-label="Основна навігація">
+                    <button class="menu-btn" type="button" aria-label="Головне меню" aria-expanded="false" aria-controls="main-menu">
+                        <svg aria-hidden="true" focusable="false" width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line y1="1" x2="54" y2="1" stroke="white" stroke-width="2"/>
                             <line y1="20" x2="54" y2="20" stroke="white" stroke-width="2"/>
                             <line y1="39" x2="54" y2="39" stroke="white" stroke-width="2"/>
                             </svg>
                     </button>
-                    <ul class="menu__list">
+                    <ul class="menu__list" id="main-menu">
                         <li class="menu__item">
                             <a href="#about" class="menu__link ">Про мене</a>
                         </li>
@@ -91,10 +111,10 @@
                     </ul>
                 </nav>
                 <div class="form-group dropdown">
-                    <button class="form-control dropbtn">UA</button>
-                    <div class="dropdown-content">
-                        <a href="index.html">EN</a>
-                        <a href="rus.html">RU</a>
+                    <button class="form-control dropbtn" type="button" aria-label="UA — обрати мову" aria-expanded="false" aria-controls="language-options">UA</button>
+                    <div class="dropdown-content" id="language-options">
+                        <a href="index.html" lang="en" hreflang="en" aria-label="English">EN</a>
+                        <a href="rus.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a>
                     </div>
                 </div>
             </div>
@@ -109,11 +129,11 @@
                         <img class="hero__inner__img" src="images/hero-logo.png" alt="">
                         <div class="hero__inner__box">
                             <p class="hero__inner__text mob-none">Вітаю, мене звати Оксана.</p>
-                            <div class="hero-title-box ukr">
-                                <div class="hero-title">Я UX/UI</div>
-                                <div class="hero-title-decor ukr">та Графічний</div>
-                                <div class="hero-title">Дизайнер</div>
-                            </div>
+                            <h1 class="hero-title-box ukr">
+                                <span class="hero-title">Я UX/UI</span>
+                                <span class="hero-title-decor ukr">та Графічний</span>
+                                <span class="hero-title">Дизайнер</span>
+                            </h1>
                             <p class="hero__inner__text">Допомагаю перетворювати ідеї на зрозумілі, сучасні та зручні цифрові продукти.
                                 Мій досвід охоплює графічний дизайн, вебдизайн, анімацію, а також роботу з відео- та аудіоконтентом.
                             </p>
@@ -128,7 +148,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main-content" tabindex="-1">
         <section class="what-i-do" id="about">
             <div class="container">
                 <h2 class="title">ЧИМ Я ЗАЙМАЮСЬ</h2>
@@ -152,10 +172,10 @@
 
                     <div class="portfolio-links">
                         <span class="portfolio-text">Портфоліо</span>
-                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
-                                alt="Portfolio Oksana Pleshkan case studies"></a>
-                        <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/behance.svg"
-                                alt="Behance Oksana Pleshkan case studies"></a>
+                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
+                                alt="Портфоліо та кейси Оксани Плешкан"></a>
+                        <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/behance.svg"
+                                alt="Проєкти Оксани Плешкан на Behance"></a>
                     </div>
                 </div>
             </div>
@@ -168,30 +188,30 @@
                 <div class="three-arias">
                     <dl class="inner-list">
                         <div class="clients-list">
-                            <img class="clients-img" src="images/trocaire.svg" alt="Trocaire logo">
+                            <img class="clients-img" src="images/trocaire.svg" alt="Trócaire">
                             <dt>Trócaire</dt>
                             <dd>Одна з найбільших міжнародних благодійних організацій Ірландії, що працює у сферах гуманітарної допомоги, кліматичної справедливості та міжнародного розвитку.</dd>
-                            <a class="clients-link" href="#">
+                            <a class="clients-link" href="https://trocaire.org/">
                                 trocaire.org
-                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                <img class="arrow" src="images/arrow.svg" alt="">
                             </a>
                         </div>
                         <div class="clients-list">
-                            <img class="clients-img" src="images/amu.svg" alt="AMU logo">
+                            <img class="clients-img" src="images/amu.svg" alt="Логотип Асоціації мусульман України">
                             <dt>АСОЦІАЦІЯ МУСУЛЬМАН УКРАЇНИ</dt>
                             <dd>Всеукраїнська мусульманська організація, що займається розвитком мусульманської спільноти, освітніми ініціативами, соціальними проєктами та інформаційною діяльністю в Україні.</dd>
-                            <a class="clients-link" href="#">
+                            <a class="clients-link" href="https://amu.org.ua/">
                                 amu.org.ua
-                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                <img class="arrow" src="images/arrow.svg" alt="">
                             </a>
                         </div>
                         <div class="clients-list">
-                            <img class="clients-img" src="images/dumk.svg" alt="DUMK logo">
+                            <img class="clients-img" src="images/dumk.svg" alt="Логотип Духовного управління мусульман Криму">
                             <dt>ДУХОВНЕ УПРАВЛІННЯ МУСУЛЬМАН КРИМУ</dt>
                             <dd>Релігійна організація, що представляє мусульманську спільноту Криму та займається питаннями ісламської освіти, духовного просвітництва й підтримки релігійного життя мусульман.</dd>
-                            <a class="clients-link" href="#">
+                            <a class="clients-link" href="https://dumk.org/">
                                 dumk.org
-                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                <img class="arrow" src="images/arrow.svg" alt="">
                             </a>
                         </div>
                     </dl>
@@ -224,7 +244,7 @@
                                 <li class="card--list--item">Front-end розробка, налаштування хостингу та публікація проєкту в мережі</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn">ОБГОВОРИТИ ПРОЄКТ</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn" aria-label="ОБГОВОРИТИ ПРОЄКТ: Дизайн лендингу або сайту-візитівки">ОБГОВОРИТИ ПРОЄКТ</a>
                     </div>
 
                     <div class="service-card">
@@ -246,52 +266,52 @@
                                 <li class="card--list--item">Підготовка макета для подальшої front-end розробки</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn">ОБГОВОРИТИ ПРОЄКТ</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn" aria-label="ОБГОВОРИТИ ПРОЄКТ: ПОВНИЙ UX/UI ДИЗАЙН ПРОДУКТУ">ОБГОВОРИТИ ПРОЄКТ</a>
                     </div>
                 </div>
                 <!-- <p class="referensec-text service-text-note">
                     <sup>*</sup>Front-end розробка, налаштування хостингу та публікація проєкту можуть бути виконані за окремою домовленістю.
                 </p> -->
 
-               <div class="gallery swiper gallery-swiper">
+               <div class="gallery swiper gallery-swiper" role="region" aria-label="Галерея UX/UI-проєктів" tabindex="0">
                 <div class="gallery-inner swiper-wrapper">
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-1.jpg" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-1.jpg" alt="Головна сторінка магазину одягу: четверо моделей, банер весняної колекції та кнопки покупок.">
                         </div>
                    
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-2.jpg" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-2.jpg" alt="Каталог одягу з фотографіями, цінами, вибором розміру та кнопками додавання в кошик.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-3.jpg" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-3.jpg" alt="Картки популярних товарів — сумки, ременя та куртки — у настільному й мобільному макетах магазину.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-9.jpg" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-9.jpg" alt="Лендинг модуля для дронів PARASITE: чорний фон, зелене сяйво, силует дрона та опис проєкту.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-10.jpg" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-10.jpg" alt="Розділ характеристик PARASITE: три зелені іконки та текстові колонки на чорному фоні.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-4.jpg" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-4.jpg" alt="Профіль соціальної мережі: портрет, допис із гірським озером, навігація ліворуч і список контактів праворуч.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-5.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-5.jpg" loading="lazy" alt="Стрічка соціальної мережі MUSLIMAH із фотодописами, навігацією ліворуч і рекомендованими контактами.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-6.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-6.jpg" loading="lazy" alt="Кілька накладених макетів соціальної мережі: профіль, стрічка фотографій і контакти.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-7.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-7.jpg" loading="lazy" alt="Слайд дослідження користувачів із червоними стовпчиковими діаграмами опитування про соціальні мережі.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-8.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-8.jpg" loading="lazy" alt="Намальований від руки ескіз інтерфейсу на ноутбуці поруч із початковими каркасами вебсторінок.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-11.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-11.jpg" loading="lazy" alt="Мобільні екрани сайту Корану: м’ятні заголовки, арабський текст, елементи читання та навігація.">
                     </div><div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-12.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-12.jpg" loading="lazy" alt="Головна сторінка сайту Корану для комп’ютера: арабська каліграфія, пошук і сітка сур.">
                     </div><div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-13.jpg" loading="lazy" alt="Дизайн і розробка сайту — Оксана Плешкан | UX/UI-дизайн, вебдизайн, графічний дизайн, брендинг та Front-End розробка">
+                        <img class="gallery-img" src="images/gallery-ui-13.jpg" loading="lazy" alt="Інтерфейс читання Корану з аудіокеруванням, картками сур і м’ятним футером.">
                     </div>
                 </div>
                 <div class="gallery-pagination swiper-pagination"></div>
@@ -319,7 +339,7 @@
                                 <li class="card--list--item">Сертифікати та фірмові документи</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn">ОБГОВОРИТИ ПРОЄКТ</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn" aria-label="ОБГОВОРИТИ ПРОЄКТ: Дизайн для друку">ОБГОВОРИТИ ПРОЄКТ</a>
                     </div>
 
                     <div class="service-card">
@@ -338,7 +358,7 @@
                                 <li class="card--list--item">Маркетингові матеріали</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn">ОБГОВОРИТИ ПРОЄКТ</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn" aria-label="ОБГОВОРИТИ ПРОЄКТ: ЦИФРОВИЙ ДИЗАЙН">ОБГОВОРИТИ ПРОЄКТ</a>
                     </div>
 
                     <div class="service-card">
@@ -361,62 +381,68 @@
                                 </li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn">ОБГОВОРИТИ ПРОЄКТ</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую." class="card-btn" aria-label="ОБГОВОРИТИ ПРОЄКТ: МОУШН-ДИЗАЙН ТА ВІДЕО">ОБГОВОРИТИ ПРОЄКТ</a>
                     </div>
                 </div>
 
-                <div class="gallery swiper gallery-swiper">
+                <div class="gallery swiper gallery-swiper" role="region" aria-label="Галерея графічного та моушн-дизайну" tabindex="0">
                     <div class="gallery-inner swiper-wrapper">
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-1.jpg" alt="Оформлення YouTube-каналів, створення обкладинок для відео, монтаж відео, обробка аудіо та брендинг.">
+                            <img class="gallery-img" src="images/youtube-galllery-1.jpg" alt="Мініатюра інтерв’ю YouTube із двома чоловіками та російським написом про молодих фахівців, які ведуть людей уперед.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-2.jpg" alt="Оформлення YouTube-каналів, створення обкладинок для відео, монтаж відео, обробка аудіо та брендинг.">
+                            <img class="gallery-img" src="images/youtube-galllery-2.jpg" alt="Мініатюра YouTube: жінка з блокнотом і запитання, чи варто писати рекрутерам у LinkedIn напряму.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <video class="gallery-img" autoplay muted loop playsinline>
+                            <button class="gallery-motion" type="button" aria-label="Відтворити або призупинити анімацію: Логотип подкасту Kotech із мікрофоном і сяючою синьою рамкою на темному фоні." aria-pressed="false">
+                                <video class="gallery-img" aria-hidden="true" autoplay muted loop playsinline>
                                 <source src="images/video-1.mp4" type="video/mp4">
                             </video>
+                            </button>
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-5.jpg" alt="Оформлення YouTube-каналів, створення обкладинок для відео, монтаж відео, обробка аудіо та брендинг.">
+                            <img class="gallery-img" src="images/youtube-galllery-5.jpg" alt="Мініатюра YouTube про пошук роботи: жінка закриває обличчя рукою, поруч напис про сім ключових помилок.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <video class="gallery-img" autoplay muted loop playsinline>
+                            <button class="gallery-motion" type="button" aria-label="Відтворити або призупинити анімацію: Три анімовані банери підписки на подкасти з кнопками вподобання, дзвіночками та логотипами Divan і Kotech." aria-pressed="false">
+                                <video class="gallery-img" aria-hidden="true" autoplay muted loop playsinline>
                                 <source src="images/video-3.mp4" type="video/mp4">
                             </video>
+                            </button>
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <video class="gallery-img" autoplay muted loop playsinline>
+                            <button class="gallery-motion" type="button" aria-label="Відтворити або призупинити анімацію: Заставка подкасту Divan із жовтим кріслом, мікрофоном і візерунковим фоном." aria-pressed="false">
+                                <video class="gallery-img" aria-hidden="true" autoplay muted loop playsinline>
                                 <source src="images/video-2.mp4" type="video/mp4">
                             </video>
+                            </button>
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-10.jpg" loading="lazy" alt="Оформлення YouTube-каналів, створення обкладинок для відео, монтаж відео, обробка аудіо та брендинг.">
+                            <img class="gallery-img" src="images/youtube-galllery-10.jpg" loading="lazy" alt="Мініатюра YouTube: жінка в позі йоги на синьому зоряному фоні та напис про три кроки до успіху.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-1.jpg" aloading="lazy" lt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-1.jpg" loading="lazy" alt="Зелено-золота обкладинка україномовної книги на столі поруч із чашкою та чотками.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-2.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-2.jpg" loading="lazy" alt="Візитівки Moeboe із салатовим логотипом на темно-зеленому та яскравому салатовому фоні.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-3.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-3.jpg" loading="lazy" alt="Фітнес-банер GIMFIT: тренер Mark Stenson із гантеллю та яскраві жовті написи на чорному фоні.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-4.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-4.jpg" loading="lazy" alt="Червоний постер вечері з танцями до 50-річчя на цегляній стіні, з датою події та інформацією про квитки.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-5.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-5.jpg" loading="lazy" alt="Синьо-червоний постер вечері з танцями до другої річниці на вуличній рекламній конструкції.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-6.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-6.jpg" loading="lazy" alt="Розворот книги з декоративним заголовком розділу, текстом і пейзажною фотографією в бірюзовій рамці.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-7.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-7.jpg" loading="lazy" alt="Кілька книжкових розворотів із круглими орнаментами, текстовими колонками та ілюстраціями.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-10.jpg" loading="lazy" alt="Брендинг, дизайн банерів і постерів, оформлення соціальних мереж, відеовиробництво, моушн-дизайн, дизайн візитівок, презентацій та книжкова верстка.">
+                            <img class="gallery-img" src="images/others-gallery-10.jpg" loading="lazy" alt="Редакційний макет у рожевих і приглушених зелених тонах: портрети жінок у хустках, текстові колонки та зразки кольорів.">
                         </div>
                     </div>
                     <div class="gallery-pagination swiper-pagination"></div>
@@ -450,77 +476,77 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="title">Що про мене говорять</h2>
-                <div class="reviews--slider swiper">
+                <div class="reviews--slider swiper" role="region" aria-label="Відгуки клієнтів" tabindex="0">
                     <div class="swiper-wrapper reviews--inner">
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Хотів би висловити велику подяку Оксані. Ми вже понад рік працюємо з нею над різними проєктами — від обкладинок для YouTube-каналу до UX/UI-дизайну для більш масштабних проєктів. Я дуже задоволений її роботою, швидкістю, якістю та вартістю послуг. Це ідеальний варіант як для стартапів, які хочуть отримати якісний дизайн, так і для великих компаній, що прагнуть створити професійний дизайн для своїх проєктів.
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Іслям Усеїнов
                             </p>
                         </div>
                         
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Я працювала з Оксаною над обкладинками для YouTube і дуже задоволена цим досвідом! Оксана швидко проаналізувала мою нішу та створила дизайн, який ідеально відповідав моїм референсам. Вона постійно пропонує свіжі та креативні ідеї, і складається враження, ніби читає мої думки — настільки точно передає моє бачення та втілює його в життя. Я дуже рада, що знайшла її та обрала саме для цієї співпраці. Щиро рекомендую!
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Вікторія Захарова
                             </p>
                         </div>
 
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Оксана — працьовита, талановита людина, з якою приємно працювати з самого початку. Її внесок у цей проєкт став ключовим фактором його успіху та розвитку. На мою думку, якість її роботи завжди була на найвищому рівні.
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Stephen Farley
                             </p>
                         </div>
 
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Оксана завжди демонструвала високий професіоналізм, відповідальне ставлення до роботи та чудові навички комунікації з клієнтами.
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Christina Guiry
                             </p>
                         </div>
 
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Вау, Оксаночко!!! Це неймовірно!!! Усі банери чудові!!! Щиро дякую!
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Ірина Поліщук</p>
                         </div>
                     </div>
 
                     <div class="reviews-navigation">
-                    <div class="reviews--item-arrow reviews--item-prev">
-                        <img src="images/arrow-left.svg" alt="scroll left">
+                    <div class="reviews--item-arrow reviews--item-prev" aria-label="Попередній відгук">
+                        <img src="images/arrow-left.svg" alt="">
                     </div>
                     <div class="reviews--item-arrow heart-heartbeat">
-                        <img class="reviews--item-heart" src="images/heart.svg" alt="heart icon">
+                        <img class="reviews--item-heart" src="images/heart.svg" alt="">
                     </div>
-                    <div class="reviews--item-arrow reviews--item-next">
-                        <img src="images/arrow-right.svg" alt="scroll right">
+                    <div class="reviews--item-arrow reviews--item-next" aria-label="Наступний відгук">
+                        <img src="images/arrow-right.svg" alt="">
                     </div>
                 </div>
 
@@ -537,27 +563,27 @@
                             <div class=".reference-card">
                                 <dt>Dr Caitríona Ní Chasaide</dt>
                                 <dd>Керівниця програми Creative Media & UX Design, TUS Clonmel</dd>
-                                <a class="clients-link" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20на%20контактні%20дані%20-%20Dr%20Caitriona%20Ni%20Chasaide&body=Вітаю,%20Оксано!%0A%0AЯ%20хотів(ла)%20б%20отримати%20контактні%20дані%20Dr%20Caitriona%20Ni%20Chasaide.%0A%0AДякую.">
+                                <a class="clients-link" aria-label="запитати контакт: Dr Caitríona Ní Chasaide" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20на%20контактні%20дані%20-%20Dr%20Caitriona%20Ni%20Chasaide&body=Вітаю,%20Оксано!%0A%0AЯ%20хотів(ла)%20б%20отримати%20контактні%20дані%20Dr%20Caitriona%20Ni%20Chasaide.%0A%0AДякую.">
                                     запитати контакт
-                                    <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                    <img class="arrow" src="images/arrow.svg" alt="">
                                 </a>
                             </div>
                             <div class=".reference-card">
                                 <dt>Eamon Dalton</dt>
                                 <dd>Старший викладач Technological University of the Shannon,
                                     Ірландія</dd>
-                                <a class="clients-link" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20на%20контактні%20дані%20-%20Dr%20Caitriona%20Ni%20Chasaide&body=Вітаю,%20Оксано!%0A%0AЯ%20хотів(ла)%20б%20отримати%20контактні%20дані%20Dr%20Caitriona%20Ni%20Chasaide.%0A%0AДякую.">
+                                <a class="clients-link" aria-label="запитати контакт: Eamon Dalton" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20на%20контактні%20дані%20-%20Eamon%20Dalton&body=Вітаю,%20Оксано!%0A%0AЯ%20хотів(ла)%20б%20отримати%20контактні%20дані%20Eamon%20Dalton.%0A%0AДякую.">
                                     запитати контакт
-                                    <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                    <img class="arrow" src="images/arrow.svg" alt="">
                                 </a>
                             </div>
                             <div class=".reference-card">
                                 <dt>Сергій Медведєв</dt>
 
                                 <dd>Голова відділу медіавиробництва в Асоціації Мусульман України (АМУ), Україна</dd>
-                                <a class="clients-link" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20на%20контактні%20дані%20-%20Dr%20Caitriona%20Ni%20Chasaide&body=Вітаю,%20Оксано!%0A%0AЯ%20хотів(ла)%20б%20отримати%20контактні%20дані%20Dr%20Caitriona%20Ni%20Chasaide.%0A%0AДякую.">
+                                <a class="clients-link" aria-label="запитати контакт: Сергій Медведєв" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20на%20контактні%20дані%20-%20Sergiy%20Medvidev&body=Вітаю,%20Оксано!%0A%0AЯ%20хотів(ла)%20б%20отримати%20контактні%20дані%20Sergiy%20Medvidev.%0A%0AДякую.">
                                     запитати контакт
-                                    <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                    <img class="arrow" src="images/arrow.svg" alt="">
                                 </a>
                             </div>
                         </dl>
@@ -582,22 +608,26 @@
                             <span class="portfolio-text">Контакти</span>
                             <div class="contact-form--icons">
                                 <a class="portfolio-behance" href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you."><img class="portfolio-icon" src="images/email.svg"
-                                        alt="Email Oksana Pleshkan"></a>
-                                <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon"
-                                        src="images/linkedIn.svg" alt="Linked In Oksana Pleshkan"></a>
-                                <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon"
-                                        src="images/behance.svg" alt="Behance Oksana Pleshkan case studies"></a>
+                                        alt="Написати Оксані Плешкан електронною поштою"></a>
+                                <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon"
+                                        src="images/linkedIn.svg" alt="Оксана Плешкан у LinkedIn"></a>
+                                <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon"
+                                        src="images/behance.svg" alt="Проєкти Оксани Плешкан на Behance"></a>
                             </div>
                         </div>
                     </div>
                     <div class="contact-form--form">
-                        <form class="form" action="https://formspree.io/f/xaqgqkwl" method="POST" id="contact-form">
-                            <input class="form--input" type="text" name="name" placeholder="Ім’я">
-                            <input class="form--input" type="email" name="email" placeholder="Email">
-                            <textarea class="form--input form--textarea" name="message" placeholder="Повідомлення"></textarea>
+                        <form class="form" action="https://formspree.io/f/xaqgqkwl" method="POST" id="contact-form" aria-label="Запит щодо проєкту">
+                            <label class="visually-hidden" for="contact-name">Ім’я</label>
+                            <input class="form--input" type="text" name="name" placeholder="Ім’я" id="contact-name" required autocomplete="name" maxlength="120">
+                            <label class="visually-hidden" for="contact-email">Email</label>
+                            <input class="form--input" type="email" name="email" placeholder="Email" id="contact-email" required autocomplete="email" maxlength="254">
+                            <label class="visually-hidden" for="contact-message">Повідомлення</label>
+                            <textarea class="form--input form--textarea" name="message" placeholder="Повідомлення" id="contact-message" required maxlength="5000"></textarea>
                             <button class="form--btn" type="submit">НАДІСЛАТИ</button>
                         </form>
-                        <div class="form-success" id="success-message">
+                        <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                        <div class="form-success" id="success-message" tabindex="-1">
                             <h3>Дякую!</h3>
                             <p>Ваше повідомлення успішно надіслано. Я зв’яжуся з вами найближчим часом.</p>
                         </div>
@@ -614,20 +644,20 @@
                     <div class="footer--logo">
                         <a class="footer-logo-link" href="#hero">
                             <img class="footer-img" src="images/footer-img.svg"
-                            alt="Logo Oksana Pleshkan UX UI Designer, Web Designer and Graphic Designer">
+                            alt="Оксана Плешкан — на початок сторінки">
                         </a>
                     </div>
                     <p class="footer--text">Дизайн та розробка:
                         Оксана Плешкан © 2026
                     </p>
                     <div class="footer--links">
-                        <a class="portfolio-whatsapp" href="https://wa.me/353873744560" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/whatsapp.svg" width="50" height="50" alt="WhatsApp"></a>
+                        <a class="portfolio-whatsapp" href="https://wa.me/353873744560" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/whatsapp.svg" width="50" height="50" alt="Написати Оксані Плешкан у WhatsApp"></a>
                         <a class="portfolio-behance" href="mailto:oksana1.1pleshkan@gmail.com?subject=Запит%20щодо%20проєкту&body=Вітаю,%20Оксано!%0A%0AМене%20цікавить%20співпраця%20щодо%20проєкту.%0A%0AКороткий%20опис:%0A...%0A%0AБюджет%20(за%20бажанням):%0A...%0A%0AТермін:%0A...%0A%0AДякую."><img class="portfolio-icon" src="images/email.svg"
-                                alt="Email Oksana Pleshkan"></a>
-                        <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/linkedIn.svg"
-                                alt="Linked In Oksana Pleshkan"></a>
-                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
-                                alt="Portfolio Oksana Pleshkan case studies"></a>
+                                alt="Написати Оксані Плешкан електронною поштою"></a>
+                        <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/linkedIn.svg"
+                                alt="Оксана Плешкан у LinkedIn"></a>
+                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
+                                alt="Портфоліо та кейси Оксани Плешкан"></a>
                     </div>
                 </div>
             </div>
@@ -638,6 +668,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/reveal.js"></script>
+    <span class="visually-hidden" id="new-tab-note">відкриється в новій вкладці</span>
 </body>
 
 </html>

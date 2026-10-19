@@ -30,6 +30,9 @@
         <meta property="og:url" content="https://oksanapleshkan.com/">
         <meta property="og:image" content="https://oksanapleshkan.com/images/preview-serv.png">
     
+        <meta property="og:image:alt" content="Preview of design projects by Oksana Pleshkan">
+        <meta property="og:locale" content="en_IE">
+
         <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:title" content="Oksana Pleshkan | UX/UI, Web & Graphic Designer">
@@ -37,15 +40,22 @@
             content="UX/UI, web and graphic designer creating websites, landing pages, mobile app interfaces, visual identities, motion graphics and accessible user experiences from concept to launch.">
         <meta name="twitter:image" content="https://oksanapleshkan.com/images/preview-serv.png">
     
+<meta name="twitter:image:alt" content="Preview of design projects by Oksana Pleshkan">
+
         <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "Organization",
-              "name": "Oksana Pleshkan",
-              "url": "https://oksanapleshkan.com/",
-              "logo": "https://oksanapleshkan.com/images/google-logo.png"
-            }
-            </script>
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "@id": "https://oksanapleshkan.com/#person",
+            "name": "Oksana Pleshkan",
+            "url": "https://oksanapleshkan.com/",
+            "jobTitle": "UX/UI, Web & Graphic Designer",
+            "sameAs": [
+                "https://www.behance.net/oksanapleshkan",
+                "https://www.linkedin.com/in/oksana-pleshkan/"
+            ]
+        }
+        </script>
 
         <!-- Search optimisation -->
         <link rel="alternate" hreflang="en" href="https://oksanapleshkan.com/" />
@@ -65,6 +75,7 @@
     </head>
 
 <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- header together with hero -->
     <header class="header">
         <div class="container-header">
@@ -72,21 +83,21 @@
 
                 <a class="logo logo-desktop" href="#hero">
                     <img class="logo__img logo-desk" src="images/logo.svg"
-                        alt="logo Oksana Pleshkan - Web designer, web design, create website, landing page, youtube designer, ux ui designer in Ireland, graphic designer in ireland, moution graphics Ireland">
+                        alt="Oksana Pleshkan — back to top">
                 </a>
-                <a class="logo logo-mobile" href="#">
+                <a class="logo logo-mobile" href="#hero">
                     <img class="logo__img logo-mob" src="images/logo-mob.svg"
-                        alt="logo Oksana Pleshkan - Web designer, web design, create website, landing page, youtube designer, ux ui designer in Ireland, graphic designer in ireland, moution graphics Ireland">
+                        alt="Oksana Pleshkan — back to top">
                 </a>
-                <nav class="menu">
-                    <button class="menu-btn">
-                        <svg width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <nav class="menu" aria-label="Main navigation">
+                    <button class="menu-btn" type="button" aria-label="Main menu" aria-expanded="false" aria-controls="main-menu">
+                        <svg aria-hidden="true" focusable="false" width="54" height="40" viewBox="0 0 54 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <line y1="1" x2="54" y2="1" stroke="white" stroke-width="2"/>
                             <line y1="20" x2="54" y2="20" stroke="white" stroke-width="2"/>
                             <line y1="39" x2="54" y2="39" stroke="white" stroke-width="2"/>
                             </svg>
                     </button>
-                    <ul class="menu__list">
+                    <ul class="menu__list" id="main-menu">
                         <li class="menu__item">
                             <a href="#about" class="menu__link ">About</a>
                         </li>
@@ -99,10 +110,10 @@
                     </ul>
                 </nav>
                 <div class="form-group dropdown">
-                    <button class="form-control dropbtn">EN</button>
-                    <div class="dropdown-content">
-                        <a href="ukr.html">UA</a>
-                        <a href="rus.html">RU</a>
+                    <button class="form-control dropbtn" type="button" aria-label="EN — choose language" aria-expanded="false" aria-controls="language-options">EN</button>
+                    <div class="dropdown-content" id="language-options">
+                        <a href="ukr.html" lang="uk" hreflang="uk" aria-label="Українська">UA</a>
+                        <a href="rus.html" lang="ru" hreflang="ru" aria-label="Русский">RU</a>
                     </div>
                 </div>
             </div>
@@ -117,11 +128,11 @@
                         <img class="hero__inner__img" src="images/hero-logo.png" alt="">
                         <div class="hero__inner__box">
                             <p class="hero__inner__text mob-none">Hi, I'm Oksana</p>
-                            <div class="hero-title-box">
-                                <div class="hero-title">UX/UI &</div>
-                                <div class="hero-title-decor">Graphic</div>
-                                <div class="hero-title">Designer</div>
-                            </div>
+                            <h1 class="hero-title-box">
+                                <span class="hero-title">UX/UI &</span>
+                                <span class="hero-title-decor">Graphic</span>
+                                <span class="hero-title">Designer</span>
+                            </h1>
                             <p class="hero__inner__text">I help turn ideas into clear, modern, and user-friendly digital
                                 products.
                                 My experience includes graphic design, web design, animation, and working with video and audio content.
@@ -137,7 +148,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main-content" tabindex="-1">
         <section class="what-i-do" id="about">
             <div class="container">
                 <h2 class="title">WHAT I DO</h2>
@@ -167,10 +178,10 @@
 
                     <div class="portfolio-links">
                         <span class="portfolio-text">Portfolio</span>
-                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
-                                alt="Portfolio Oksana Pleshkan case studies"></a>
-                        <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/behance.svg"
-                                alt="Behance Oksana Pleshkan case studies"></a>
+                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
+                                alt="Oksana Pleshkan portfolio and case studies"></a>
+                        <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/behance.svg"
+                                alt="Oksana Pleshkan projects on Behance"></a>
                     </div>
                 </div>
             </div>
@@ -183,37 +194,37 @@
                 <div class="three-arias">
                     <dl class="inner-list">
                         <div class="clients-list">
-                            <img class="clients-img" src="images/trocaire.svg" alt="Trocaire logo">
+                            <img class="clients-img" src="images/trocaire.svg" alt="Trócaire">
                             <dt>Trócaire</dt>
                             <dd>One of Ireland’s leading international humanitarian
                                 organizations, dedicated to humanitarian assistance,
                                 climate justice, global development, and human rights.</dd>
-                            <a class="clients-link" href="#">
+                            <a class="clients-link" href="https://trocaire.org/">
                                 trocaire.org
-                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                <img class="arrow" src="images/arrow.svg" alt="">
                             </a>
                         </div>
                         <div class="clients-list">
-                            <img class="clients-img" src="images/amu.svg" alt="AMU logo">
+                            <img class="clients-img" src="images/amu.svg" alt="Association of Muslims in Ukraine logo">
                             <dt>ASSOCIATION OF MUSLIMS in UKRAINE</dt>
                             <dd>A national Muslim organization engaged in educational,
                                 social, and community initiatives, promoting the development
                                 of Muslim communities across Ukraine.</dd>
-                            <a class="clients-link" href="#">
+                            <a class="clients-link" href="https://amu.org.ua/">
                                 amu.org.ua
-                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                <img class="arrow" src="images/arrow.svg" alt="">
                             </a>
                         </div>
                         <div class="clients-list">
-                            <img class="clients-img" src="images/dumk.svg" alt="DUMK logo">
+                            <img class="clients-img" src="images/dumk.svg" alt="Spiritual Administration of Muslims of Crimea logo">
                             <dt>SPIRITUAL ADMINISTRATION OF MUSLIMS OF CRIMEA</dt>
 
                             <dd>A religious institution representing the Muslim community of Crimea,
                                 focusing on Islamic education, spiritual leadership, and community
                                 support.</dd>
-                            <a class="clients-link" href="#">
+                            <a class="clients-link" href="https://dumk.org/">
                                 dumk.org
-                                <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                <img class="arrow" src="images/arrow.svg" alt="">
                             </a>
                         </div>
                     </dl>
@@ -247,7 +258,7 @@
                                 <li class="card--list--item">Front-end development and hosting configuration</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn">DISCUSS PROJECT</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn" aria-label="DISCUSS PROJECT: LANDING PAGE OR INFORMATIONAL WEBSITE DESIGN">DISCUSS PROJECT</a>
                     </div>
 
                     <div class="service-card">
@@ -271,7 +282,7 @@
                                 <li class="card--list--item">Development-ready design handoff</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn">DISCUSS PROJECT</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn" aria-label="DISCUSS PROJECT: Full UX/UI Product Design">DISCUSS PROJECT</a>
                     </div>
                 </div>
                 <!-- <p class="referensec-text service-text-note">
@@ -279,46 +290,46 @@
                     can be arranged separately.
                 </p> -->
 
-               <div class="gallery swiper gallery-swiper">
+               <div class="gallery swiper gallery-swiper" role="region" aria-label="UX/UI project gallery" tabindex="0">
                 <div class="gallery-inner swiper-wrapper">
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-1.jpg" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-1.jpg" alt="Fashion shop homepage with four models, a Spring Collection banner and shopping buttons.">
                         </div>
                    
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-2.jpg" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-2.jpg" alt="Fashion shop product grid with clothing photos, prices, size selectors and Add to cart buttons.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-3.jpg" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-3.jpg" alt="Online shop bestseller cards for a bag, belt and jacket, shown in desktop and mobile layouts.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-9.jpg" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-9.jpg" alt="PARASITE drone module landing page with a black background, green glow, drone silhouette and project introduction.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-10.jpg" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-10.jpg" alt="PARASITE product features section with three green icons and text columns on a black background.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-4.jpg" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-4.jpg" alt="Social network profile with a portrait, a mountain lake post, left navigation and a contacts sidebar.">
                     </div>
                     
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-5.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-5.jpg" loading="lazy" alt="MUSLIMAH social network feed with photo posts, left navigation and a suggested contacts panel.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-6.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-6.jpg" loading="lazy" alt="Overlapping social network interface mockups showing a profile, photo feed and contacts.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-7.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-7.jpg" loading="lazy" alt="User research slide with red bar charts summarising a survey about social network use.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-8.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-8.jpg" loading="lazy" alt="Hand-drawn laptop interface sketch alongside low-fidelity website wireframes.">
                     </div>
                     <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-11.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-11.jpg" loading="lazy" alt="Quran website mobile screens with mint-green headers, Arabic text, reading controls and navigation.">
                     </div> <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-12.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-12.jpg" loading="lazy" alt="Quran website desktop homepage with Arabic calligraphy, a search field and a grid of surahs.">
                     </div> <div class="gallery-item swiper-slide">
-                        <img class="gallery-img" src="images/gallery-ui-13.jpg" loading="lazy" alt="Website Design by Oksana Pleshkan | UX/UI Designer, Web Designer, Graphic Designer & Front-End Developer">
+                        <img class="gallery-img" src="images/gallery-ui-13.jpg" loading="lazy" alt="Quran website reading interface with audio controls, surah cards and a mint-green footer.">
                     </div>
                 </div>
                 <div class="gallery-pagination swiper-pagination"></div>
@@ -346,7 +357,7 @@
                                 <li class="card--list--item">Certificates and branded documents</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn">DISCUSS PROJECT</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn" aria-label="DISCUSS PROJECT: PRINT DESIGN">DISCUSS PROJECT</a>
                     </div>
 
                     <div class="service-card">
@@ -366,7 +377,7 @@
                                 <li class="card--list--item">Marketing materials</li>
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn">DISCUSS PROJECT</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn" aria-label="DISCUSS PROJECT: DIGITAL DESIGN">DISCUSS PROJECT</a>
                     </div>
 
                     <div class="service-card">
@@ -390,62 +401,68 @@
 
                             </ul>
                         </div>
-                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn">DISCUSS PROJECT</a>
+                        <a href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you." class="card-btn" aria-label="DISCUSS PROJECT: MOTION &amp; VIDEO DESIGN">DISCUSS PROJECT</a>
                     </div>
                 </div>
 
-                <div class="gallery swiper gallery-swiper">
+                <div class="gallery swiper gallery-swiper" role="region" aria-label="Graphic and motion design gallery" tabindex="0">
                     <div class="gallery-inner swiper-wrapper">
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-1.jpg" alt="youtube channel design, thumbnails, video editing, audio editing, branding">
+                            <img class="gallery-img" src="images/youtube-galllery-1.jpg" alt="YouTube interview thumbnail with two men and Russian text about young professionals leading people forward.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-2.jpg" alt="youtube channel design, thumbnails, video editing, audio editing, branding">
+                            <img class="gallery-img" src="images/youtube-galllery-2.jpg" alt="YouTube thumbnail with a woman holding a notebook and Ukrainian text asking whether to message recruiters directly on LinkedIn.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <video class="gallery-img" autoplay muted loop playsinline>
+                            <button class="gallery-motion" type="button" aria-label="Play or pause animation: Kotech podcast logo with a microphone and glowing blue border on a dark background." aria-pressed="false">
+                                <video class="gallery-img" aria-hidden="true" autoplay muted loop playsinline>
                                 <source src="images/video-1.mp4" type="video/mp4">
                             </video>
+                            </button>
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-1.jpg" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-1.jpg" alt="Green and gold Ukrainian-language book cover displayed on a table beside a cup and prayer beads.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-2.jpg" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-2.jpg" alt="Moeboe business cards with a lime-green logo on dark green and bright lime backgrounds.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/youtube-galllery-5.jpg" alt="youtube channel design, thumbnails, video editing, audio editing, branding">
+                            <img class="gallery-img" src="images/youtube-galllery-5.jpg" alt="YouTube job-search thumbnail with a woman covering her face and Ukrainian text about seven key mistakes.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <video class="gallery-img" autoplay muted loop playsinline>
+                            <button class="gallery-motion" type="button" aria-label="Play or pause animation: Three animated podcast subscription banners with like buttons, notification bells and Divan and Kotech logos." aria-pressed="false">
+                                <video class="gallery-img" aria-hidden="true" autoplay muted loop playsinline>
                                 <source src="images/video-3.mp4" type="video/mp4">
                             </video>
+                            </button>
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <video class="gallery-img" autoplay muted loop playsinline>
+                            <button class="gallery-motion" type="button" aria-label="Play or pause animation: Divan podcast intro with a yellow armchair, microphone and patterned backdrop." aria-pressed="false">
+                                <video class="gallery-img" aria-hidden="true" autoplay muted loop playsinline>
                                 <source src="images/video-2.mp4" type="video/mp4">
                             </video>
+                            </button>
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img cloading="lazy" lass="gallery-img" src="images/youtube-galllery-10.jpg" alt="youtube channel design, thumbnails, video editing, audio editing, branding">
+                            <img cloading="lazy" lass="gallery-img" src="images/youtube-galllery-10.jpg" alt="YouTube thumbnail with a woman in a yoga pose against a blue starry background and Ukrainian text about three steps to success.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-3.jpg" loading="lazy" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-3.jpg" loading="lazy" alt="GIMFIT fitness banner with trainer Mark Stenson holding a dumbbell and bold yellow lettering on black.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-4.jpg" loading="lazy" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-4.jpg" loading="lazy" alt="Red 50th anniversary dinner dance poster mounted on a brick wall, with event date and ticket information.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-5.jpg" loading="lazy" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-5.jpg" loading="lazy" alt="Blue and red second anniversary dinner dance poster displayed on an outdoor advertising board.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-6.jpg" loading="lazy" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-6.jpg" loading="lazy" alt="Open book layout with a decorative chapter heading, body text and a landscape photograph with a turquoise border.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-7.jpg" loading="lazy" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-7.jpg" loading="lazy" alt="Several open book spreads with decorative circular motifs, text columns and illustrations.">
                         </div>
                         <div class="gallery-item swiper-slide">
-                            <img class="gallery-img" src="images/others-gallery-10.jpg" loading="lazy" alt="Branding, banner, poster, social media design assets, video, motion graphics, business card, presentation, book layout">
+                            <img class="gallery-img" src="images/others-gallery-10.jpg" loading="lazy" alt="Editorial layout in pink and muted green with portraits of women in headscarves, text columns and colour samples.">
                         </div>
                     </div>
                     <div class="gallery-pagination swiper-pagination"></div>
@@ -478,80 +495,80 @@
         <section class="reviews">
             <div class="container">
                 <h2 class="title">What People Say About My Work</h2>
-                <div class="reviews--slider swiper">
+                <div class="reviews--slider swiper" role="region" aria-label="Client testimonials" tabindex="0">
                     <div class="swiper-wrapper reviews--inner">
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 I would like to express my sincere gratitude to Oksana. We have been working together on various projects for over a year, ranging from YouTube thumbnails to UX/UI design for more advanced products.
                                 I am extremely satisfied with the quality of her work, the turnaround time, and the value she provides. Oksana is a great choice for both startups looking for high-quality design and established companies seeking professional visual solutions.
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Islam Useinov
                             </p>
                         </div>
                         
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 I've been working with Oksana on YouTube thumbnails, and I couldn't be happier with the experience. Oksana quickly analyzed my niche and created designs that perfectly matched my references and expectations.
                                 She consistently brings fresh creative ideas to the table and has an incredible ability to understand and visualize exactly what I have in mind. I'm very happy that I found her and chose her for this collaboration. Highly recommended!
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Viktoriia Zakharova
                             </p>
                         </div>
 
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Oksana is hard-working, talented and a pleasure to work with since the beginning. Her involvement in this project has been crucial to getting it to where it is now, and the quality of her work has in my opinion been of the highest level.
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Stephen Farley
                             </p>
                         </div>
 
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Oksana has as always displayed great professionalism, work ethic and ability to communicate with a client.
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Christina Guiry
                             </p>
                         </div>
 
                         <div class="swiper-slide reviews--item">
-                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="quotation mark icon">
+                            <img class="quotes-up-icon" src="images/quotes-up.svg" alt="">
 
                             <p class="reviews-item-text">
                                 Wow, Oksana! This is absolutely amazing!
                                 Every banner looks fantastic. Thank you so much!
                             </p>
-                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="quotation mark icon">
+                            <img class="quotes-down-icon" src="images/quotes-down.svg" alt="">
                             <p class="reviews-autor">
                                 Iryna Polishchuk </p>
                         </div>
                     </div>
 
                     <div class="reviews-navigation">
-                    <div class="reviews--item-arrow reviews--item-prev">
-                        <img src="images/arrow-left.svg" alt="scroll left">
+                    <div class="reviews--item-arrow reviews--item-prev" aria-label="Previous testimonial">
+                        <img src="images/arrow-left.svg" alt="">
                     </div>
                     <div class="reviews--item-arrow heart-heartbeat">
-                        <img class="reviews--item-heart" src="images/heart.svg" alt="heart icon">
+                        <img class="reviews--item-heart" src="images/heart.svg" alt="">
                     </div>
-                    <div class="reviews--item-arrow reviews--item-next">
-                        <img src="images/arrow-right.svg" alt="scroll right">
+                    <div class="reviews--item-arrow reviews--item-next" aria-label="Next testimonial">
+                        <img src="images/arrow-right.svg" alt="">
                     </div>
                 </div>
 
@@ -569,18 +586,18 @@
                                 <dt>Dr Caitríona Ní Chasaide</dt>
                                 <dd>Programme Leader Creative Media & UX Design, TUS Clonmel,
                                     Ireland</dd>
-                                <a class="clients-link" href="mailto:oksana1.1pleshkan@gmail.com?subject=Reference%20Request%20-%20Dr%20Caitriona%20Ni%20Chasaide&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20request%20the%20contact%20details%20for%20Dr%20Caitriona%20Ni%20Chasaide.%0A%0AThank%20you.">
+                                <a class="clients-link" aria-label="request contact: Dr Caitríona Ní Chasaide" href="mailto:oksana1.1pleshkan@gmail.com?subject=Reference%20Request%20-%20Dr%20Caitriona%20Ni%20Chasaide&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20request%20the%20contact%20details%20for%20Dr%20Caitriona%20Ni%20Chasaide.%0A%0AThank%20you.">
                                     request contact
-                                    <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                    <img class="arrow" src="images/arrow.svg" alt="">
                                 </a>
                             </div>
                             <div class=".reference-card">
                                 <dt>Eamon Dalton</dt>
                                 <dd>Senior Lecturer Technological University of the Shannon,
                                     Ireland</dd>
-                                <a class="clients-link" href="mailto:oksana1.1pleshkan@gmail.com?subject=Reference%20Request%20-%20Eamon%20Dalton&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20request%20the%20contact%20details%20for%20Eamon%20Dalton.%0A%0AThank%20you.">
+                                <a class="clients-link" aria-label="request contact: Eamon Dalton" href="mailto:oksana1.1pleshkan@gmail.com?subject=Reference%20Request%20-%20Eamon%20Dalton&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20request%20the%20contact%20details%20for%20Eamon%20Dalton.%0A%0AThank%20you.">
                                     request contact
-                                    <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                    <img class="arrow" src="images/arrow.svg" alt="">
                                 </a>
                             </div>
                             <div class=".reference-card">
@@ -588,9 +605,9 @@
 
                                 <dd>Head of Media Production Department
                                     Association of Muslims of Ukraine (AMU) Ukraine</dd>
-                                <a class="clients-link" href="mailto:oksana1.1pleshkan@gmail.com?subject=Reference%20Request%20-%20Sergiy%20Medvidev&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20request%20the%20contact%20details%20for%20Sergiy%20Medvidev.%0A%0AThank%20you.">
+                                <a class="clients-link" aria-label="request contact: Sergiy Medvidev" href="mailto:oksana1.1pleshkan@gmail.com?subject=Reference%20Request%20-%20Sergiy%20Medvidev&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20request%20the%20contact%20details%20for%20Sergiy%20Medvidev.%0A%0AThank%20you.">
                                     request contact
-                                    <img class="arrow" src="images/arrow.svg" alt="arrow">
+                                    <img class="arrow" src="images/arrow.svg" alt="">
                                 </a>
                             </div>
                         </dl>
@@ -617,21 +634,25 @@
                             <div class="contact-form--icons">
                                 <a class="portfolio-behance" href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you."><img class="portfolio-icon" src="images/email.svg"
                                         alt="Email Oksana Pleshkan"></a>
-                                <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon"
-                                        src="images/linkedIn.svg" alt="Linked In Oksana Pleshkan"></a>
-                                <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon"
-                                        src="images/behance.svg" alt="Behance Oksana Pleshkan case studies"></a>
+                                <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon"
+                                        src="images/linkedIn.svg" alt="Oksana Pleshkan on LinkedIn"></a>
+                                <a class="portfolio-behance" href="https://www.behance.net/oksanapleshkan" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon"
+                                        src="images/behance.svg" alt="Oksana Pleshkan projects on Behance"></a>
                             </div>
                         </div>
                     </div>
                     <div class="contact-form--form">
-                        <form class="form" action="https://formspree.io/f/xaqgqkwl" method="POST" id="contact-form">
-                            <input class="form--input" type="text" name="name" placeholder="Name">
-                            <input class="form--input" type="email" name="email" placeholder="Email">
-                            <textarea class="form--input form--textarea" name="message" placeholder="Message"></textarea>
+                        <form class="form" action="https://formspree.io/f/xaqgqkwl" method="POST" id="contact-form" aria-label="Project enquiry">
+                            <label class="visually-hidden" for="contact-name">Name</label>
+                            <input class="form--input" type="text" name="name" placeholder="Name" id="contact-name" required autocomplete="name" maxlength="120">
+                            <label class="visually-hidden" for="contact-email">Email</label>
+                            <input class="form--input" type="email" name="email" placeholder="Email" id="contact-email" required autocomplete="email" maxlength="254">
+                            <label class="visually-hidden" for="contact-message">Message</label>
+                            <textarea class="form--input form--textarea" name="message" placeholder="Message" id="contact-message" required maxlength="5000"></textarea>
                             <button class="form--btn" type="submit">SEND MESSAGE</button>
                         </form>
-                        <div class="form-success" id="success-message">
+                        <p class="form-status" id="form-status" role="status" aria-live="polite" aria-atomic="true"></p>
+                        <div class="form-success" id="success-message" tabindex="-1">
                             <h3>Thank you!</h3>
                             <p>Your message has been sent successfully. I will get back to you soon.</p>
                         </div>
@@ -648,21 +669,21 @@
                     <div class="footer--logo">
                         <a class="footer-logo-link" href="#hero">
                             <img class="footer-img" src="images/footer-img.svg"
-                            alt="Logo Oksana Pleshkan UX UI Designer, Web Designer and Graphic Designer">
+                            alt="Oksana Pleshkan — back to top">
                         </a>
                     </div>
                     <p class="footer--text">Designed & Developed
                         By Oksana Pleshkan © 2026
                     </p>
                     <div class="footer--links">
-                        <a class="portfolio-whatsapp" href="https://wa.me/353873744560" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/whatsapp.svg" width="50" height="50" alt="WhatsApp"></a>
+                        <a class="portfolio-whatsapp" href="https://wa.me/353873744560" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/whatsapp.svg" width="50" height="50" alt="Message Oksana Pleshkan on WhatsApp"></a>
                         <a class="portfolio-behance" href="mailto:oksana1.1pleshkan@gmail.com?subject=Project%20or%20Collaboration%20Inquiry&body=Hello%20Oksana,%0A%0AI%20would%20like%20to%20discuss%20an%20idea,%20project,%20or%20collaboration.%0A%0ADetails:%0A...%0A%0AThank%20you."><img class="portfolio-icon" src="images/email.svg"
                                 alt="Email Oksana Pleshkan"></a>
 
-                        <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/linkedIn.svg"
-                                alt="Linked In Oksana Pleshkan"></a>
-                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
-                                alt="Portfolio Oksana Pleshkan case studies"></a>
+                        <a class="portfolio-behance" href="https://www.linkedin.com/in/oksana-pleshkan/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/linkedIn.svg"
+                                alt="Oksana Pleshkan on LinkedIn"></a>
+                        <a class="portfolio-website" href="https://oksana-pl.github.io/Portfolio_Oksana/" target="_blank" aria-describedby="new-tab-note" rel="noopener noreferrer"><img class="portfolio-icon" src="images/portfolio.svg"
+                                alt="Oksana Pleshkan portfolio and case studies"></a>
                     </div>
                 </div>
             </div>
@@ -673,6 +694,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/reveal.js"></script>
+    <span class="visually-hidden" id="new-tab-note">opens in a new tab</span>
 </body>
 
 </html>
