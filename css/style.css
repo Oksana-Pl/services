@@ -1239,6 +1239,12 @@ dialog::backdrop {
     pointer-events: none;
     user-select: none;
 }
+@media (max-width: 44rem) {
+    #services-title,
+    #portfolio-title {
+        font-size: clamp(3.3rem, 7.5vw, 6.75rem);
+    }
+}
 @media (forced-colors: active) {
     .extruded-title {
         padding: 0;
