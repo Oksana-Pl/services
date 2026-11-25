@@ -79,9 +79,13 @@ video {
     justify-content: space-between;
     border-bottom: 1px solid var(--color-line);
 }
+.site-header nav {
+    margin-inline-start: auto;
+}
 .site-header ul {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     padding: 0;
     margin: 0;
     list-style: none;
@@ -975,10 +979,6 @@ dialog::backdrop {
 @media (max-width: 24rem) {
     .analytics-actions {
         grid-template-columns: minmax(0, 1fr);
-    }
-    .site-header nav {
-        order: 3;
-        width: 100%;
     }
     .hero h1 {
         letter-spacing: -0.06em;
