@@ -584,6 +584,10 @@ dialog::backdrop {
 }
 .privacy-policy {
     max-width: 72ch;
+    padding-top: calc(var(--section-space) / 2);
+}
+.privacy-policy h1 {
+    margin-top: 2rem;
 }
 .privacy-policy h2 {
     margin-top: 2rem;
@@ -1278,4 +1282,92 @@ dialog::backdrop {
     margin-top: 0.5rem;
     color: var(--color-muted);
     font-size: 0.875rem;
+}
+
+/* Phone mockups on case study pages */
+.case-phone-frame {
+    padding: clamp(3px, 0.5vw, 7px);
+    border: 1px solid #626161;
+    border-radius: 14% / 6%;
+    background: linear-gradient(125deg, #454545, #1c1c1c 20%, #121212 75%, #555);
+    box-shadow: 0 0.3rem 0.7rem #1c1c1c26;
+}
+.case figure .case-phone-frame img {
+    border: 0;
+    border-radius: 12% / 5%;
+}
+
+/* Velora Ink case study */
+.velora-notes {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(2rem, 9vw, 8rem);
+    margin-block: clamp(3rem, 8vw, 7rem);
+}
+.velora-notes .case-story-copy {
+    margin-bottom: 0;
+    max-width: 34ch;
+}
+.velora-notes h2 {
+    margin: 0 0 0.75rem;
+}
+.velora-notes .case-story-copy + .case-story-copy {
+    justify-self: end;
+    margin-top: clamp(2rem, 7vw, 6rem);
+}
+.velora-screens {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(0, 1fr);
+    align-items: start;
+    gap: clamp(1rem, 3vw, 2rem);
+}
+.velora-desktop img {
+    border: 1px solid var(--color-line);
+}
+.velora-phones {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(0.5rem, 1.8vw, 1.25rem);
+    max-width: 25rem;
+}
+.velora-phones figure:nth-child(2) {
+    margin-top: clamp(2rem, 7vw, 6rem);
+}
+.velora-case .velora-mobile-note {
+    max-width: 48ch;
+    margin: clamp(3rem, 7vw, 6rem) auto;
+    text-align: center;
+}
+.velora-cta {
+    border-top: 1px solid var(--color-line);
+    padding-top: clamp(2rem, 6vw, 5rem);
+}
+.velora-cta h2 {
+    margin: 0;
+    font-size: var(--font-h2);
+}
+.velora-cta h2 span {
+    display: block;
+    margin-inline-start: 20%;
+}
+.velora-cta .case-links {
+    margin-inline-start: 20%;
+}
+@media (max-width: 44rem) {
+    .velora-notes,
+    .velora-screens {
+        grid-template-columns: minmax(0, 1fr);
+    }
+    .velora-notes .case-story-copy + .case-story-copy {
+        justify-self: start;
+        margin-top: 0;
+    }
+    .velora-phones {
+        width: min(100%, 24rem);
+        justify-self: center;
+    }
+    .velora-cta h2 span,
+    .velora-cta .case-links {
+        margin-inline-start: 0;
+    }
 }
